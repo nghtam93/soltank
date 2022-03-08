@@ -167,7 +167,7 @@ strong{
 }
 
 /* Slider */
-.flickity {
+.flickity:not(.-full) {
     --bs-gutter-x: 30px;
     margin-right: calc(var(--bs-gutter-x) * -.5);
     margin-left: calc(var(--bs-gutter-x) * -.5);

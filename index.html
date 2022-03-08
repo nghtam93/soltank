@@ -91,13 +91,13 @@
       </section>
 
       <section class="home-game-mode">
-        <div class="container-fluid">
+        <div class="container-fluid p-0">
 
           <header class="sc__header text-center">
             <h2 class="sc__header__title">GAME MODE</h2>
           </header>
 
-          <div class="game-mode-slider flickity flickity--fade" data-flickity='{ "wrapAround": true, "pageDots": false, "prevNextButtons": true}'>
+          <div class="game-mode-slider flickity -full flickity--fade" data-flickity='{ "wrapAround": true, "pageDots": false, "prevNextButtons": true}'>
             <div class="slider__item__wrap col-12">
               <div class="slider__item">
                 <div class="slider__item__thumb">
@@ -106,8 +106,10 @@
                   </div>
                 </div>
                 <div class="slider__item__meta">
-                  <p class="slider__item__title">PVE</p>
-                  <p class="slider__item__excerpt">Fight against hazardous and powerful bosses</p>
+                  <div class="slider__item__box">
+                    <p class="slider__item__title">PVE</p>
+                    <p class="slider__item__excerpt">Fight against hazardous and powerful bosses</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -119,8 +121,10 @@
                   </div>
                 </div>
                 <div class="slider__item__meta">
-                  <p class="slider__item__title">PVE</p>
-                  <p class="slider__item__excerpt">Fight against hazardous and powerful bosses</p>
+                  <div class="slider__item__box">
+                    <p class="slider__item__title">PVE</p>
+                    <p class="slider__item__excerpt">Fight against hazardous and powerful bosses</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -132,8 +136,10 @@
                   </div>
                 </div>
                 <div class="slider__item__meta">
-                  <p class="slider__item__title">PVE</p>
-                  <p class="slider__item__excerpt">Fight against hazardous and powerful bosses</p>
+                  <div class="slider__item__box">
+                    <p class="slider__item__title">PVE</p>
+                    <p class="slider__item__excerpt">Fight against hazardous and powerful bosses</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -144,7 +150,7 @@
 
 
       <section class="home-battle">
-        <div class="container">
+        <div class="container container-1200">
           <header class="sc__header text-center">
             <h2 class="sc__header__title">BATTLE & EARN</h2>
             <div class="sc__header__excerpt">There are many ways to earn money in SolTank</div>
@@ -153,7 +159,7 @@
             <div class="col">
               <div class="el__item">
                 <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
+                  <div class="dnfix__thumb">
                     <img src="images/home-battle-01.jpg" alt="">
                   </div>
                 </div>
@@ -166,26 +172,26 @@
             <div class="col">
               <div class="el__item">
                 <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
-                    <img src="images/home-battle-01.jpg" alt="">
+                  <div class="dnfix__thumb">
+                    <img src="images/home-battle-02.jpg" alt="">
                   </div>
                 </div>
                 <div class="el__item__meta">
-                  <h3 class="el__item__title">CONQUER THE BATTLES</h3>
-                  <div class="el__item__excerpt">Win the battles, earn exclusive currency and NFT item.</div>
+                  <h3 class="el__item__title">TRADE</h3>
+                  <div class="el__item__excerpt">NFT item can be traded in marketplace.</div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="el__item">
                 <div class="el__item__thumb">
-                  <div class="dnfix__thumb -contain">
-                    <img src="images/home-battle-01.jpg" alt="">
+                  <div class="dnfix__thumb">
+                    <img src="images/home-battle-03.jpg" alt="">
                   </div>
                 </div>
                 <div class="el__item__meta">
-                  <h3 class="el__item__title">CONQUER THE BATTLES</h3>
-                  <div class="el__item__excerpt">Win the battles, earn exclusive currency and NFT item.</div>
+                  <h3 class="el__item__title">STAKING & FARMING</h3>
+                  <div class="el__item__excerpt">Maximize profits through DeFi features.</div>
                 </div>
               </div>
             </div>
@@ -193,26 +199,45 @@
         </div>
       </section>
 
-      <section class="home-metaverse">
+      <section class="home-metaverse" style="background-image: url(images/home-metaverse.jpg);">
         <div class="container">
-          <header class="sc__header text-center">
+          <header class="sc__header text-center -green">
             <h2 class="sc__header__title">SOLTANK METAVERSE</h2>
             <div class="sc__header__excerpt">More activities, Easy earning</div>
           </header>
+
+          <div class="el__box">
+            <div class="el__box__item -s1">
+              <p>TANK RENTAL</p>
+              <div class='pulse'></div>
+            </div>
+            <div class="el__box__item -s2">
+              <p>GUILD</p>
+              <div class='pulse'></div>
+            </div>
+            <div class="el__box__item -s3">
+              <p>WORLD WAR</p>
+              <div class='pulse'></div>
+            </div>
+            <div class="el__box__item -s4">
+              <p>PROPERTY</p>
+              <div class='pulse'></div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="home-collection">
-        <div class="container">
+        <div class="container-fluid">
           <header class="sc__header">
             <h2 class="sc__header__title">NFT COLLECTION</h2>
           </header>
 
-          <div class="collection-slider flickity" data-flickity='{ "wrapAround": true, "pageDots": false, "prevNextButtons": false}'>
+          <div class="collection-slider flickity" data-flickity='{ "wrapAround": true, "pageDots": true, "prevNextButtons": false}'>
             <div class="slider__item__wrap col-12">
               <div class="slider__item">
                 <div class="slider__item__thumb">
-                  <div class="dnfix__thumb">
+                  <div class="dnfix__thumb -contain">
                     <img src="images/collection-img-01.png" alt="">
                   </div>
                 </div>
@@ -224,7 +249,7 @@
             <div class="slider__item__wrap col-12">
               <div class="slider__item">
                 <div class="slider__item__thumb">
-                  <div class="dnfix__thumb">
+                  <div class="dnfix__thumb -contain">
                     <img src="images/collection-img-02.png" alt="">
                   </div>
                 </div>
@@ -236,7 +261,7 @@
             <div class="slider__item__wrap col-12">
               <div class="slider__item">
                 <div class="slider__item__thumb">
-                  <div class="dnfix__thumb">
+                  <div class="dnfix__thumb -contain">
                     <img src="images/collection-img-03.png" alt="">
                   </div>
                 </div>
@@ -248,7 +273,7 @@
             <div class="slider__item__wrap col-12">
               <div class="slider__item">
                 <div class="slider__item__thumb">
-                  <div class="dnfix__thumb">
+                  <div class="dnfix__thumb -contain">
                     <img src="images/collection-img-04.png" alt="">
                   </div>
                 </div>
@@ -260,8 +285,20 @@
             <div class="slider__item__wrap col-12">
               <div class="slider__item">
                 <div class="slider__item__thumb">
-                  <div class="dnfix__thumb">
+                  <div class="dnfix__thumb -contain">
                     <img src="images/collection-img-05.png" alt="">
+                  </div>
+                </div>
+                <div class="slider__item__meta">
+                  <p class="slider__item__title">Tank Name</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__item__wrap col-12">
+              <div class="slider__item">
+                <div class="slider__item__thumb">
+                  <div class="dnfix__thumb -contain">
+                    <img src="images/collection-img-03.png" alt="">
                   </div>
                 </div>
                 <div class="slider__item__meta">
@@ -274,60 +311,59 @@
         </div>
       </section>
 
-      <section class="home-TOKENOMICS">
+      <section class="home-tokenmoics">
         <div class="container">
           <header class="sc__header">
             <h2 class="sc__header__title">TOKENOMICS</h2>
-            <div class="sc__header__excerpt">Sub</div>
           </header>
 
           <div class="el__box">
 
             <div class="el__box__thumb">
               <img src="assets/img/home-tolenomics-circle.png" alt="">
-            </div>
 
-            <div class="el__box__center">
-              <p>Symbol</p>
-              <p>STK</p>
-              <p>Total supply</p>
-              <p>300.000.000</p>
-              <p>Blockchain</p>
-              <p>Solana</p>
+              <div class="el__box__text text-center">
+                <p class="-text-small">Symbol</p>
+                <p class="-text-large mb-3">STK</p>
+                <p class="-text-small">Total supply</p>
+                <p class="-number mb-3">300.000.000</p>
+                <p class="-text-small">Blockchain</p>
+                <p class="-text-large">Solana</p>
+              </div>
             </div>
 
             <div class="el__box__percent">
-              <div>
+              <div class="el__percent -s1">
                 <p>Seed Round</p>
-                <p>5%</p>
+                <p class="-percent">5%</p>
               </div>
-              <div>
+              <div class="el__percent -s2">
                 <p>Team</p>
-                <p>10%</p>
+                <p class="-percent">10%</p>
               </div>
-              <div>
+              <div class="el__percent -s3">
                 <p>Private Sale</p>
-                <p>10%</p>
+                <p class="-percent">10%</p>
               </div>
-              <div>
+              <div class="el__percent -s4">
                 <p>Ecosystem Up</p>
-                <p>20%</p>
+                <p class="-percent">20%</p>
               </div>
-              <div>
+              <div class="el__percent -s5">
                 <p>Public Sale</p>
-                <p>1%</p>
+                <p class="-percent">1%</p>
               </div>
-              <div>
+              <div class="el__percent -s6">
                 <p>Staking Reward</p>
-                <p>10%</p>
+                <p class="-percent">10%</p>
               </div>
-              <div>
+              <div class="el__percent -s7">
                 <p>Game Reward</p>
-                <p>40%</p>
+                <p class="-percent">40%</p>
               </div>
-              <div>
+              <div class="el__percent -s8">
                 <p>Advisors</p>
-                <p>4%</p>
+                <p class="-percent">4%</p>
               </div>
             </div>
 

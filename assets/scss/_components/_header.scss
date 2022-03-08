@@ -1,55 +1,76 @@
 .header{
 	position: fixed;
 	top: 0;
+	left: 0;
 	width: 100%;
-	z-index: 999;
-	padding: 10px 0;
-	background: transparent;
-	transition: all .3s;
-	&.is-sticky{
-
-	}
-	.logo{
-		padding: 0;
-		margin-bottom: 0;
+	max-width:100%;
+	z-index: 10;
+	padding: 0;
+	transition: all .5s;
+	.centered-logo{
+		transition: opacity .5s;
 		img{
 			width: auto;
-			max-height: 40px;
+			max-height: 152px;
+			transition: all .5s;
 		}
 	}
 
-	&__btn{
-		font-size: 16px;
-	    font-weight: 500;
-	    color: #613FE5;
-	    border: 2px solid #613FE5;
-	    border-radius: 30px;
-	    display: inline-block;
-	    padding: 5px 20px;
-	    line-height: 25px;
-	    transition: all .5s;
-		&::after {
-			content: "\e900";
-			font-family: 'icomoon';
-			font-weight: 400;
-			color: #613FE5;
-    		font-size: 12px;
-    		margin-left: 8px;
+	&.is-active{
+		padding: 30px 0;
+		background: rgba(15, 1, 69, 0.9);
+		animation:stuckMoveDown .6s;
+		.centered-logo{
+			img{
+				max-height: 50px;
+			}
 		}
-		&:hover{
-			color: #fff;
-			background: #613FE5;
-			&::after {
-				color: #fff;
+		.main__nav li.centered-logo {
+		    top: -15px;
+		}
+		.header__mb{
+			img{
+				max-height: 50px;
 			}
 		}
 	}
 
+	&__mb{
+		position: relative;
+		display: none;
+		width: 100%;
+    	text-align: center;
+		img{
+			width: auto;
+			max-height: 80px;
+			transition: all .5s;
+		}
+	}
 
+	@media (max-width: 1399px){
+
+
+	}
+	@media (max-width: 1299px){
+		&.is-active {
+
+		}
+		&__mb{
+			display: block;
+		}
+	}
 	@media (max-width: 1199px){
 
 	}
 	@media (max-width: 991px){
 
 	}
+
+	@media (max-width: 575px){
+
+	}
+}
+@keyframes stuckMoveDown{
+    0%{transform:translateY(-100%)}
+    100%{transform:translateY(0)}
 }

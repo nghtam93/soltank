@@ -87,21 +87,6 @@ $(document).ready(function(){
     $('.menu-mb__btn').dnmenu()
 
 
-     // check checkbox checked enable button
-    function checkDisableButton() {
-        $(".js-attr-disable").each(function () {
-          let checkBox = $(this).find(".js-attr-checkbox");
-          let btn = $(this).find(".js-attr-button");
-          checkBox.on("click", function () {
-            if ($(this).is(":checked")) {
-              $(btn).removeAttr("disabled").removeClass("-disabled");
-            } else {
-              $(btn).attr("disabled", "disabled").addClass("-disabled");
-            }
-          });
-        });
-    }
-    checkDisableButton();
 
     //Select Item
     function ddropdown(elm) {
@@ -127,128 +112,10 @@ $(document).ready(function(){
     /*home-intro*/
     if($('body').hasClass('home')){
 
-        /*==========Change video==========*/
-        $(window).on("load resize", function() {
-            setTimeout(function(){
-                change_video_home()
-            }, 200);
-
-        })
-
-        function change_video_home(argument) {
-
-            $( ".js-ratio--video").each(function( index ) {
-              var video_src = $(this).data("pc")
-
-                if (window.matchMedia("(max-width: 575px)").matches) {
-                   video_src = $(this).data("mb")
-                }
-                $(this).find('video').attr("src", video_src)
-
-            });
-        }
-
-        /*====================*/
-        $('.home-intro .el__thumb').hover(function(e) {
-            $('.home-intro .el__thumb').removeClass('active')
-
-            imageUrl = $(this).data('src')
-
-            $(".home-intro").css("background-image", "url(" + imageUrl + ")");
-            $(this).addClass('active')
-        })
-
-        /**/
-        // Your main div is characters-main
-        var paradigm_flkty = new Flickity('.paradigm__slider', {
-          autoPlay: true,
-          pauseAutoPlayOnHover: false,
-          wrapAround: true,
-          cellAlign: "left",
-          prevNextButtons: false,
-          pageDots: false,
-          cellSelector: ".slider__item__wrap"
-        });
-
-        $(".home-paradigm .flickity__button.-next").on("click", function() {
-               paradigm_flkty.next();
-        });
-        $(".home-paradigm .flickity__button.-prev").on("click", function() {
-              paradigm_flkty.previous();
-        });
-
-        // Your main div is characters-main
-        var character_flkty = new Flickity('.character__slider');
-        $(".character__slider__wrap .flickity__button.-next").on("click", function() {
-               character_flkty.next();
-        });
-        $(".character__slider__wrap .flickity__button.-prev").on("click", function() {
-              character_flkty.previous();
-        });
-
-        // Your main div is characters-main
-        var pet_flkty = new Flickity('.pet__slider');
-        $(".pet__slider__wrap .flickity__button.-next").on("click", function() {
-               pet_flkty.next();
-        });
-        $(".pet__slider__wrap .flickity__button.-prev").on("click", function() {
-              pet_flkty.previous();
-        });
-
-        // Your main div is characters-main
-        var ourteam_flkty = new Flickity('.ourteam__slider');
-        $(".ourteam__slider__wrap .flickity__button.-next").on("click", function() {
-               ourteam_flkty.next();
-        });
-        $(".ourteam__slider__wrap .flickity__button.-prev").on("click", function() {
-              ourteam_flkty.previous();
-        });
-
-
-        // Home ourteam
-        $('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
-          $('.js-flickity').flickity('resize');
-        })
-        $('.home-ourteam .slider__item__wrap[data-bs-toggle="modal"]').on("click",function(e) {
-            var content = $(this).find('.js-slider-content').html()
-            $('.js-modal-body').html(content)
-        })
     }
 
-    /*Page market*/
 
-    $('.js-widget--toggle').on("click",function(e) {
-        $('.market__sidebar').toggleClass('active')
-        $('body').toggleClass('filter-open')
 
-    })
-
-    // Widget
-
-    var e=$(".market__checkbox");
-    e.find(".has-children>label").after('<div class="togglez"><i></i></div>'),
-    e.find(".togglez").on("click",function(e){e.stopPropagation(),
-    $(this).parent().find("ul.sub-menu").is(":visible")?$(this).parent().removeClass("active"):$(this).parent().addClass("active"),
-    $(this).parent().find("ul.sub-menu").first().slideToggle()})
-
-    // Tooltip page account
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
-    // ClipboardJS
-    if($(document).find('.js-item-copy').length !=0){
-        let clipboard = new ClipboardJS('.js-item-copy');
-        clipboard.on('success', function (e) {
-            let trigger_button = e.trigger;
-            // update the tooltip title, get the tooltip instance, and show it
-            trigger_button.setAttribute('data-bs-original-title', 'Copied!');
-            let btn_tooltip = bootstrap.Tooltip.getInstance(trigger_button);
-            btn_tooltip.show();
-            // reset the tooltip title
-            trigger_button.setAttribute('data-bs-original-title', 'Copy to clipboard');
-        });
-    }
 });
 
 

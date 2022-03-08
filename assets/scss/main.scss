@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+@import "../fonts/UTMAkashi/stylesheet.css";
+@import "../fonts/icomoon/style.css";
+
+@import "../libs/bootstrap/css/bootstrap.css";
+@import "_components/base";
+
+// Component
+@import "_components/animate";
+@import "_components/header";
+@import "_components/footer";
+@import "_components/menu";
+@import "_components/general";
+@import "_components/connectwallet";
+// Page
+
+@import "_pages/home";
+@import "_pages/marketplace";
+@import "_pages/single";
+@import "_pages/account";
+@import "_pages/activity";
+@import "_pages/game";
+@import "_pages/governance";
+
+// @import "_pages/play-to-earn";

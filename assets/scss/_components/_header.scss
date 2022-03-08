@@ -1,0 +1,55 @@
+.header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+	padding: 10px 0;
+	background: transparent;
+	transition: all .3s;
+	&.is-sticky{
+
+	}
+	.logo{
+		padding: 0;
+		margin-bottom: 0;
+		img{
+			width: auto;
+			max-height: 40px;
+		}
+	}
+
+	&__btn{
+		font-size: 16px;
+	    font-weight: 500;
+	    color: #613FE5;
+	    border: 2px solid #613FE5;
+	    border-radius: 30px;
+	    display: inline-block;
+	    padding: 5px 20px;
+	    line-height: 25px;
+	    transition: all .5s;
+		&::after {
+			content: "\e900";
+			font-family: 'icomoon';
+			font-weight: 400;
+			color: #613FE5;
+    		font-size: 12px;
+    		margin-left: 8px;
+		}
+		&:hover{
+			color: #fff;
+			background: #613FE5;
+			&::after {
+				color: #fff;
+			}
+		}
+	}
+
+
+	@media (max-width: 1199px){
+
+	}
+	@media (max-width: 991px){
+
+	}
+}

@@ -35,29 +35,33 @@
 		}
 	}
 
-	&__mb{
-		position: relative;
-		display: none;
+	&-mb{
+		position: fixed;
+		top: 0;
+		left: 0;
 		width: 100%;
+		z-index: 10;
     	text-align: center;
 		img{
 			width: auto;
-			max-height: 80px;
+			max-height: 66px;
 			transition: all .5s;
+		}
+		transition: background .5s;
+		&.is-sticky{
+			background: #3b4d3e;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.26);
 		}
 	}
 
 	@media (max-width: 1399px){
 
+		background: #3b4d3e;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.26);
 
 	}
 	@media (max-width: 1299px){
-		&.is-active {
 
-		}
-		&__mb{
-			display: block;
-		}
 	}
 	@media (max-width: 1199px){
 

@@ -2,7 +2,7 @@
     position: relative;
 }
 .sc__header{
-    position:relative;margin:0 0 50px;
+    position:relative;margin:0 0 60px;
     z-index: 1;
     &.-green{
         .sc__header__title{
@@ -26,7 +26,11 @@
         text-shadow: 0px 2px 2px #034110;
 
     }
-    &__excerpt{color:#FFFFFF;}
+    &__excerpt{
+        color:#FFFFFF;
+        font-size: 24px;
+        line-height: 36px;
+    }
     @media (max-width:1399px){
         &__title{font-size:48px;line-height:58px;}
     }
@@ -37,7 +41,10 @@
     @media (max-width:575px){
         &__title {
             font-size: 38px;
-            line-height: normal;
+            line-height: 40px;
+            + div{
+                margin-top: 8px;
+            }
         }
         &__excerpt{font-size:14px;}
     }
@@ -111,6 +118,9 @@
 @keyframes spinner-rotate{
     to{transform:rotate(360deg);}
 }
+@keyframes spinner-rotate2{
+    to{transform:rotate(-360deg);}
+}
 @keyframes animate{
     0%{box-shadow:0 0 50px #0F0,inset 0 0 50px #0F0;filter:hue-rotate(0deg);}
     20%{box-shadow:0 0 40px #0F0,inset 0 0 60px #0F0;}
@@ -132,7 +142,7 @@
     position: absolute;
     left: 0 !important;
     height: 100%;
-    width: 3840px;
+    width: 100%;
     bottom: 0 !important;
     margin: 0 !important;
     -webkit-transform: translate3d(0, 0, 0);
@@ -141,31 +151,48 @@
     z-index: -1;
 }
 .clouds_one {
-    background: url(../img/header-cloud.png);
+    background: url(../img/cloud-large.png);
     background-repeat: no-repeat;
     background-position: top left;
     background-size:contain;
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 53%;
+    height: 60%;
     width: 100%;
-    -webkit-animation: cloud_one 400s linear infinite;
-    -moz-animation: cloud_one 400s linear infinite;
-    -o-animation: cloud_one 400s linear infinite;
+    -webkit-animation: cloud_one 10s linear infinite;
+    -moz-animation: cloud_one 10s linear infinite;
+    -o-animation: cloud_one 10s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+}
+.clouds_two {
+    background: url(../img/cloud-large.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size:contain;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 34%;
+    width: 100%;
+    -webkit-animation: cloud_one 12s linear infinite;
+    -moz-animation: cloud_one 12s linear infinite;
+    -o-animation: cloud_one 12s linear infinite;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
 }
 @-webkit-keyframes cloud_one {
   0% {
-    left: 0;
-  }
-  50% {
     left: -100%;
   }
+  50% {
+    left: 100%;
+  }
   100% {
-    left: -200%;
+    left: 200%;
   }
 }
 

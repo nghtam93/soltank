@@ -18,7 +18,6 @@
 
     <header class="header -fix">
       <div class="container-fluid d-flex align-items-center justify-content-center">
-
           <nav class="main__nav">
             <ul class="el__menu">
               <li class="menu-item active"><a href="index.html">Home</a></li>
@@ -37,18 +36,21 @@
               <li class="menu-item ms-auto"><a href="#">Roadmap</a></li>
               <li class="menu-item"><a href="#">Partners</a></li>
               <li class="menu-item"><a href="#">Marketplace</a></li>
-              <li class="menu-item -button"><a href="marketplace.html"><i class="ic-tank"></i>CREATE ACCOUNT</a></li>
+              <li class="menu-item -menu-button"><a href=""><i class="ic-tank"></i>CREATE ACCOUNT</a></li>
 
             </ul>
           </nav>
-
-
-        <a href="#" class="menu-mb__btn ms-auto d-md-none" data-id="menu__mobile">
-          <i class="icon-dots-menu"></i>
-        </a>
-
       </div>
     </header>
+
+    <div class="header-mb d-flex d-xl-none">
+      <a href="index.html">
+        <img src="images/logo.png" width="198" height="152" alt="Logo">
+      </a>
+      <a href="#" class="menu-mb__btn ms-auto" data-id="menu__mobile">
+        <i class="ic-dots-menu"></i>
+      </a>
+    </div>
 
     <div class="wrapper">
 
@@ -60,12 +62,12 @@
         <div class="container">
           <div class="el__wrap">
             <div class="el__meta">
-              <div class="el__title">THE FIRST TACTICAL TANK <br>GAME ON SOLANA</div>
+              <div class="el__title wow fadeInUp">THE FIRST TACTICAL TANK <br>GAME ON SOLANA</div>
               <div class="el__excerpt text-center wow fadeInUp">Soltank aims to create a place for battles where heroes show off their skills and earn tradable digital assets</div>
 
-              <div class="d-flex align-items-center">
-                <a href="" class="btn me-3 d-flex align-items-center"><i class="ic-battle me-3"></i>BATTLE NOW</a>
-                <a href="" class="btn -green">PITCH DECK</a>
+              <div class="d-sm-flex align-items-center">
+                <a href="" class="btn mb-3 me-3 d-flex align-items-center wow fadeInLeft"><i class="ic-battle me-3"></i>BATTLE NOW</a>
+                <a href="" class="btn mb-3 -green wow fadeInRight">PITCH DECK</a>
               </div>
             </div>
           </div>
@@ -76,10 +78,10 @@
       <section class="home-intro">
         <div class="container container-1200">
 
-          <div class="el__box__header text-center">
+          <div class="el__box__header text-center wow fadeInUp">
             <div class="el__box__title">GAME PLAY DEMO</div>
           </div>
-          <div class="el__box">
+          <div class="el__box wow fadeInUp">
             <div class="ratio -center">
               <video src="images/home-intro.mp4" loop muted autoplay></video>
             </div>
@@ -93,7 +95,7 @@
       <section class="home-game-mode">
         <div class="container-fluid p-0">
 
-          <header class="sc__header text-center">
+          <header class="sc__header text-center wow fadeInUp">
             <h2 class="sc__header__title">GAME MODE</h2>
           </header>
 
@@ -148,15 +150,14 @@
         </div>
       </section>
 
-
       <section class="home-battle">
         <div class="container container-1200">
           <header class="sc__header text-center">
-            <h2 class="sc__header__title">BATTLE & EARN</h2>
-            <div class="sc__header__excerpt">There are many ways to earn money in SolTank</div>
+            <h2 class="sc__header__title wow fadeInLeft">BATTLE & EARN</h2>
+            <div class="sc__header__excerpt wow fadeInRight">There are many ways to earn money in SolTank</div>
           </header>
-          <div class="row row-cols-lg-3">
-            <div class="col">
+          <div class="row flickity -pageDotsNumber" data-flickity='{ "wrapAround": true, "cellAlign": "left" , "pageDots": true, "prevNextButtons": false, "watchCSS": true}'>
+            <div class="slider__item__wrap col-12 col-md-6 col-lg-4">
               <div class="el__item">
                 <div class="el__item__thumb">
                   <div class="dnfix__thumb">
@@ -169,7 +170,7 @@
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="slider__item__wrap col-12 col-md-6 col-lg-4">
               <div class="el__item">
                 <div class="el__item__thumb">
                   <div class="dnfix__thumb">
@@ -182,7 +183,7 @@
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="slider__item__wrap col-12 col-md-6 col-lg-4">
               <div class="el__item">
                 <div class="el__item__thumb">
                   <div class="dnfix__thumb">
@@ -199,11 +200,18 @@
         </div>
       </section>
 
-      <section class="home-metaverse" style="background-image: url(images/home-metaverse.jpg);">
+      <section class="home-metaverse">
+
+        <picture>
+            <source srcset="images/home-metaverse.jpg" media="(min-width: 768px)">
+            <img src="images/home-metaverse-mb.png" alt="" />
+        </picture>
+
+
         <div class="container">
           <header class="sc__header text-center -green">
-            <h2 class="sc__header__title">SOLTANK METAVERSE</h2>
-            <div class="sc__header__excerpt">More activities, Easy earning</div>
+            <h2 class="sc__header__title wow fadeInLeft">SOLTANK METAVERSE</h2>
+            <div class="sc__header__excerpt wow fadeInRight">More activities, Easy earning</div>
           </header>
 
           <div class="el__box">
@@ -225,15 +233,23 @@
             </div>
           </div>
         </div>
+
+        <div class="effect-box">
+          <div class="frame--cloubd">
+            <div class="clouds_one"></div>
+            <div class="clouds_two"></div>
+          </div>
+        </div>
+
       </section>
 
       <section class="home-collection ps-xxl-4">
         <div class="container-fluid ps-xxl-5">
           <header class="sc__header">
-            <h2 class="sc__header__title">NFT COLLECTION</h2>
+            <h2 class="sc__header__title wow fadeInUp">NFT COLLECTION</h2>
           </header>
 
-          <div class="collection-slider flickity" data-flickity='{ "wrapAround": true, "cellAlign": "left" , "pageDots": true, "prevNextButtons": false}'>
+          <div class="collection-slider flickity -pageDotsNumber wow fadeInUp" data-flickity='{ "wrapAround": true, "cellAlign": "left" , "pageDots": true, "prevNextButtons": false}'>
             <div class="slider__item__wrap col-12">
               <div class="slider__item">
                 <div class="slider__item__thumb">
@@ -314,10 +330,10 @@
       <section class="home-tokenmoics">
         <div class="container">
           <header class="sc__header">
-            <h2 class="sc__header__title">TOKENOMICS</h2>
+            <h2 class="sc__header__title wow fadeInUp">TOKENOMICS</h2>
           </header>
 
-          <div class="el__box">
+          <div class="el__box wow fadeInUp">
 
             <div class="el__box__thumb">
               <img src="assets/img/home-tolenomics-circle.png" alt="">
@@ -374,9 +390,9 @@
       <section class="home-team ps-xxl-4">
         <div class="container-fluid ps-xxl-5">
           <header class="sc__header text-center">
-            <h2 class="sc__header__title">OUR TEAM</h2>
+            <h2 class="sc__header__title wow fadeInUp">OUR TEAM</h2>
           </header>
-          <div class="collection-slider flickity" data-flickity='{ "wrapAround": true, "cellAlign": "left", "pageDots": true, "prevNextButtons": false}'>
+          <div class="collection-slider flickity -pageDotsNumber wow fadeInUp" data-flickity='{ "wrapAround": true, "cellAlign": "left", "pageDots": true, "prevNextButtons": false}'>
             <div class="slider__item__wrap col-12">
               <div class="slider__item">
                 <div class="slider__item__thumb">
@@ -443,71 +459,75 @@
       </section>
 
       <section class="home-roadmap">
-        <div class="container container-1200">
-          <header class="sc__header text-center">
-            <h2 class="sc__header__title">ROAD MAP</h2>
+        <div class="container-1200">
+          <header class="sc__header text-center pb-4">
+            <h2 class="sc__header__title wow fadeInUp">ROAD MAP</h2>
           </header>
 
-          <div class="el__box d-flex">
-            <div class="el__item">
-              <p class="el__item__title">Q1 - 2021</p>
-              <ul>
-                <li>Complete ideation</li>
-                <li>Team Recruitment</li>
-                <li>Start Building The Product</li>
-              </ul>
-              <div class="el__item__dot"></div>
+          <div class="el__boxs -scroll wow fadeInUp">
+            <div class="el__box d-flex">
+              <div class="el__item">
+                <p class="el__item__title">Q1 - 2021</p>
+                <ul>
+                  <li>Complete ideation</li>
+                  <li>Team Recruitment</li>
+                  <li>Start Building The Product</li>
+                </ul>
+                <div class="el__item__dot"></div>
+              </div>
+              <div class="el__item">
+                <p class="el__item__title">Q2 - 2021</p>
+                <ul>
+                  <li>Complete ideation</li>
+                  <li>Team Recruitment</li>
+                  <li>Start Building The Product</li>
+                </ul>
+                <div class="el__item__dot"></div>
+              </div>
+              <div class="el__item">
+                <p class="el__item__title">Q3 - 2021</p>
+                <ul>
+                  <li>Complete ideation</li>
+                  <li>Team Recruitment</li>
+                  <li>Start Building The Product</li>
+                </ul>
+                <div class="el__item__dot"></div>
+              </div>
             </div>
-            <div class="el__item">
-              <p class="el__item__title">Q2 - 2021</p>
-              <ul>
-                <li>Complete ideation</li>
-                <li>Team Recruitment</li>
-                <li>Start Building The Product</li>
-              </ul>
-              <div class="el__item__dot"></div>
-            </div>
-            <div class="el__item">
-              <p class="el__item__title">Q3 - 2021</p>
-              <ul>
-                <li>Complete ideation</li>
-                <li>Team Recruitment</li>
-                <li>Start Building The Product</li>
-              </ul>
-              <div class="el__item__dot"></div>
+            <div class="el__box__line"></div>
+            <div class="el__box -row2 d-flex">
+              <div class="el__item col-lg-20">
+                <p class="el__item__title">Q4 - 2021</p>
+                <ul>
+                  <li>Complete ideation</li>
+                  <li>Team Recruitment</li>
+                  <li>Start Building The Product</li>
+                </ul>
+                <div class="el__item__dot"></div>
+              </div>
+              <div class="el__item">
+                <p class="el__item__title">Q5 - 2021</p>
+                <ul>
+                  <li>Complete ideation</li>
+                  <li>Team Recruitment</li>
+                  <li>Start Building The Product</li>
+                </ul>
+                <div class="el__item__dot"></div>
+              </div>
             </div>
           </div>
-          <div class="el__box__line"></div>
-          <div class="el__box -row2 d-flex">
-            <div class="el__item col-lg-20">
-              <p class="el__item__title">Q4 - 2021</p>
-              <ul>
-                <li>Complete ideation</li>
-                <li>Team Recruitment</li>
-                <li>Start Building The Product</li>
-              </ul>
-              <div class="el__item__dot"></div>
-            </div>
-            <div class="el__item">
-              <p class="el__item__title">Q5 - 2021</p>
-              <ul>
-                <li>Complete ideation</li>
-                <li>Team Recruitment</li>
-                <li>Start Building The Product</li>
-              </ul>
-              <div class="el__item__dot"></div>
-            </div>
-          </div>
+
+
         </div>
       </section>
 
       <section class="home-partners">
         <div class="container container-1200">
           <header class="sc__header text-center">
-            <h2 class="sc__header__title">Our PARTNERS</h2>
+            <h2 class="sc__header__title wow fadeInUp">Our PARTNERS</h2>
           </header>
 
-          <div class="d-flex flex-wrap gap-3 justify-content-center">
+          <div class="d-flex flex-wrap gap-3 justify-content-center wow fadeInUp">
             <div class="el__item">
               <div class="el__item__thumb">
                 <div class="dnfix__thumb -contain">
@@ -600,28 +620,28 @@
         <div class="container">
 
           <div class="footer__logo text-center">
-            <a href="">
+            <a href="" class="wow fadeInUp">
               <img src="images/footer-logo.png" alt="">
             </a>
-            <div class="footer__logo__text">THE FIRST TACTICAL TANK <br>GAME ON SOLANA</div>
+            <div class="footer__logo__text wow fadeInDown">THE FIRST TACTICAL TANK <br>GAME ON SOLANA</div>
           </div>
 
           <div class="row">
-            <div class="col-md-4 mb-4 mb-md-0">
+            <div class="col-6 col-md-4 mb-4 mb-md-0">
               <div class="footer__item">
                 <h3 class="footer__title">CONTACT US</h3>
                 <p><a href="mailto:support@orbitmeta.io">Email: support@soltank.io</a></p>
                 <div class="footer__item--border"><div class="-top"></div><div class="-bottom"></div></div>
               </div>
             </div>
-            <div class="col-md-3 offset-md-1 mb-4 mb-md-0">
+            <div class="col-6 col-md-3 offset-md-1 mb-4 mb-md-0">
               <div class="footer__item">
                 <h3 class="footer__title">ABOUT US</h3>
                 <p><a href="#">Document</a></p>
                 <div class="footer__item--border"><div class="-top"></div><div class="-bottom"></div></div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-12 col-md-4">
               <div class="footer__item">
                 <h3 class="footer__title">JOIN OUR COMMUNITY</h3>
 
@@ -646,13 +666,16 @@
 
             <ul class="nav__mobile--ul mb-4">
               <li class="menu-item active"><a href="index.html">Home</a></li>
-              <li class="menu-item"><a href="game.html">Games</a></li>
-              <li class="menu-item"><a href="#">Metaverse</a></li>
-              <li class="menu-item"><a href="#">Pitch Deck</a></li>
+              <li class="menu-item"><a href="game.html">Game Mode</a></li>
+              <li class="menu-item"><a href="#">Battle & Earn</a></li>
+              <li class="menu-item"><a href="#">NFT Item</a></li>
+              <li class="menu-item"><a href="#">Tokenomics</a></li>
+              <li class="menu-item"><a href="#">Team</a></li>
+              <li class="menu-item"><a href="#">Roadmap</a></li>
+              <li class="menu-item"><a href="#">Partners</a></li>
+              <li class="menu-item"><a href="#">Marketplace</a></li>
+              <li class="menu-item -menu-button"><a href=""><i class="ic-tank"></i>CREATE ACCOUNT</a></li>
             </ul>
-            <div class="">
-              <a href="marketplace.html" class="btn-style"><span>MARKETPLACE</span></a>
-            </div>
           </div>
       </nav>
 

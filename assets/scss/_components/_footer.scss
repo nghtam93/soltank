@@ -104,7 +104,7 @@
 			font-family: Changa;
 			font-style: normal;
 			font-weight: 800;
-			font-size: 54.4798px;
+			font-size: 54px;
 			line-height: 54px;
 			/* or 100% */
 
@@ -143,30 +143,37 @@
 
 	}
 
-
+	@media (max-width: 1399px){
+		&__logo img {
+		    max-width: 330px;
+		}
+	}
 	@media (max-width: 1199px){
 
 	}
 	@media (max-width: 991px){
 		&__logo {
-		    margin-bottom: 50px;
+		    &__text {
+			    font-size: 48px;
+			    line-height: 50px;
+			}
 		}
+
 	}
 	@media (max-width: 767px){
-	    margin-top: -180px;
-	    padding: 265px 0 48px;
-	    text-align: center;
-	    &__title{
-	    	margin-bottom: 0;
-	    }
-	    &__logo {
-		    margin-bottom: 30px;
-		}
-	    &__socical {
-		    justify-content: center;
+
+	    &__logo__text {
+		    font-size: 40px;
+		    line-height: 46px;
 		}
 	}
 	@media (max-width: 575px){
-
+		&__logo__text {
+		    font-size: 30px;
+		    line-height: 30px;
+		}
+		&__logo img {
+		    max-width: 250px;
+		}
 	}
 }

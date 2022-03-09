@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+
+    // Stick header
+    if ( $('.header-mb').offset().top >= 10 ) $('.header-mb').addClass("is-sticky");
+    $(window).scroll(function(){
+        $(this).scrollTop()>10?$('.header-mb').addClass("is-sticky"):$('.header-mb').removeClass("is-sticky")
+    })
+
+
+
     /*----Get Header Height ---*/
     function get_header_height() {
         var header_sticky = $("header").outerHeight()

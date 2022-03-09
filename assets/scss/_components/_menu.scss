@@ -125,7 +125,11 @@ $font-color: #fff;
                 text-transform: uppercase;
                 text-shadow: 0px 1px 1px #411903, 0px 2px 4px #A63F06;
             }
-
+            &:hover{
+                a{
+                    color: #fff;
+                }
+            }
 
         }
 

@@ -233,7 +233,7 @@
             <h2 class="sc__header__title">NFT COLLECTION</h2>
           </header>
 
-          <div class="collection-slider flickity" data-flickity='{ "wrapAround": true, "pageDots": true, "prevNextButtons": false}'>
+          <div class="collection-slider flickity" data-flickity='{ "wrapAround": true, "cellAlign": "left" , "pageDots": true, "prevNextButtons": false}'>
             <div class="slider__item__wrap col-12">
               <div class="slider__item">
                 <div class="slider__item__thumb">
@@ -376,23 +376,11 @@
           <header class="sc__header text-center">
             <h2 class="sc__header__title">OUR TEAM</h2>
           </header>
-          <div class="team-slider flickity" data-flickity='{ "wrapAround": true, "pageDots": false, "prevNextButtons": false}'>
+          <div class="collection-slider flickity" data-flickity='{ "wrapAround": true, "cellAlign": "left", "pageDots": true, "prevNextButtons": false}'>
             <div class="slider__item__wrap col-12">
               <div class="slider__item">
                 <div class="slider__item__thumb">
-                  <div class="dnfix__thumb">
-                    <img src="images/collection-img-01.png" alt="">
-                  </div>
-                </div>
-                <div class="slider__item__meta">
-                  <p class="slider__item__title">John Doe</p>
-                </div>
-              </div>
-            </div>
-            <div class="slider__item__wrap col-12">
-              <div class="slider__item">
-                <div class="slider__item__thumb">
-                  <div class="dnfix__thumb">
+                  <div class="dnfix__thumb -contain">
                     <img src="images/home-team-img-01.png" alt="">
                   </div>
                 </div>
@@ -404,7 +392,7 @@
             <div class="slider__item__wrap col-12">
               <div class="slider__item">
                 <div class="slider__item__thumb">
-                  <div class="dnfix__thumb">
+                  <div class="dnfix__thumb -contain">
                     <img src="images/home-team-img-01.png" alt="">
                   </div>
                 </div>
@@ -416,7 +404,7 @@
             <div class="slider__item__wrap col-12">
               <div class="slider__item">
                 <div class="slider__item__thumb">
-                  <div class="dnfix__thumb">
+                  <div class="dnfix__thumb -contain">
                     <img src="images/home-team-img-01.png" alt="">
                   </div>
                 </div>
@@ -428,7 +416,19 @@
             <div class="slider__item__wrap col-12">
               <div class="slider__item">
                 <div class="slider__item__thumb">
-                  <div class="dnfix__thumb">
+                  <div class="dnfix__thumb -contain">
+                    <img src="images/home-team-img-01.png" alt="">
+                  </div>
+                </div>
+                <div class="slider__item__meta">
+                  <p class="slider__item__title">John Doe</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__item__wrap col-12">
+              <div class="slider__item">
+                <div class="slider__item__thumb">
+                  <div class="dnfix__thumb -contain">
                     <img src="images/home-team-img-01.png" alt="">
                   </div>
                 </div>
@@ -443,63 +443,71 @@
       </section>
 
       <section class="home-roadmap">
-        <div class="container">
+        <div class="container container-1200">
           <header class="sc__header text-center">
             <h2 class="sc__header__title">ROAD MAP</h2>
           </header>
 
-          <div class="el__box">
-            <div class="el__box__item">
-              <p>Q1 - 2021</p>
+          <div class="el__box d-flex">
+            <div class="el__item">
+              <p class="el__item__title">Q1 - 2021</p>
               <ul>
                 <li>Complete ideation</li>
                 <li>Team Recruitment</li>
                 <li>Start Building The Product</li>
               </ul>
+              <div class="el__item__dot"></div>
             </div>
-            <div class="el__box__item">
-              <p>Q2 - 2021</p>
+            <div class="el__item">
+              <p class="el__item__title">Q2 - 2021</p>
               <ul>
                 <li>Complete ideation</li>
                 <li>Team Recruitment</li>
                 <li>Start Building The Product</li>
               </ul>
+              <div class="el__item__dot"></div>
             </div>
-            <div class="el__box__item">
-              <p>Q3 - 2021</p>
+            <div class="el__item">
+              <p class="el__item__title">Q3 - 2021</p>
               <ul>
                 <li>Complete ideation</li>
                 <li>Team Recruitment</li>
                 <li>Start Building The Product</li>
               </ul>
+              <div class="el__item__dot"></div>
             </div>
-            <div class="el__box__item">
-              <p>Q4 - 2021</p>
+          </div>
+          <div class="el__box__line"></div>
+          <div class="el__box -row2 d-flex">
+            <div class="el__item col-lg-20">
+              <p class="el__item__title">Q4 - 2021</p>
               <ul>
                 <li>Complete ideation</li>
                 <li>Team Recruitment</li>
                 <li>Start Building The Product</li>
               </ul>
+              <div class="el__item__dot"></div>
             </div>
-            <div class="el__box__item">
-              <p>Q5 - 2021</p>
+            <div class="el__item">
+              <p class="el__item__title">Q5 - 2021</p>
               <ul>
                 <li>Complete ideation</li>
                 <li>Team Recruitment</li>
                 <li>Start Building The Product</li>
               </ul>
+              <div class="el__item__dot"></div>
             </div>
           </div>
         </div>
       </section>
 
       <section class="home-partners">
-        <div class="container">
+        <div class="container container-1200">
           <header class="sc__header text-center">
             <h2 class="sc__header__title">Our PARTNERS</h2>
           </header>
 
-          <div class="d-flex flex-wrap">
+          <div class="d-flex flex-wrap gap-3 justify-content-center">
             <div class="el__item">
               <div class="el__item__thumb">
                 <div class="dnfix__thumb -contain">
@@ -588,7 +596,7 @@
         </div>
       </section>
 
-      <footer class="footer">
+      <footer class="footer text-center">
         <div class="container">
 
           <div class="footer__logo text-center">
@@ -600,24 +608,32 @@
 
           <div class="row">
             <div class="col-md-4 mb-4 mb-md-0">
-              <h3 class="footer__title">CONTACT US</h3>
-              <p><a href="mailto:support@orbitmeta.io">Email: support@soltank.io</a></p>
+              <div class="footer__item">
+                <h3 class="footer__title">CONTACT US</h3>
+                <p><a href="mailto:support@orbitmeta.io">Email: support@soltank.io</a></p>
+                <div class="footer__item--border"><div class="-top"></div><div class="-bottom"></div></div>
+              </div>
             </div>
             <div class="col-md-3 offset-md-1 mb-4 mb-md-0">
-              <h3 class="footer__title">ABOUT US</h3>
-              <p><a href="#">Document</a></p>
+              <div class="footer__item">
+                <h3 class="footer__title">ABOUT US</h3>
+                <p><a href="#">Document</a></p>
+                <div class="footer__item--border"><div class="-top"></div><div class="-bottom"></div></div>
+              </div>
             </div>
             <div class="col-md-4">
-              <h3 class="footer__title">JOIN OUR COMMUNITY</h3>
+              <div class="footer__item">
+                <h3 class="footer__title">JOIN OUR COMMUNITY</h3>
 
-              <ul class="footer__socical pt-2 pt-md-1">
-                <li><a href=""><i class="icon-facebook"></i></a></li>
-                <li><a href=""><i class="icon-twitter"></i></a></li>
-                <li><a href=""><i class="icon-yotube"></i></a></li>
-                <li><a href=""><i class="icon-telegram"></i></a></li>
-                <li><a href=""><i class="icon-medium"></i></a></li>
-              </ul>
-
+                <ul class="footer__socical pt-2 pt-md-1 justify-content-center">
+                  <li><a href=""><i class="icon-facebook"></i></a></li>
+                  <li><a href=""><i class="icon-twitter"></i></a></li>
+                  <li><a href=""><i class="icon-yotube"></i></a></li>
+                  <li><a href=""><i class="icon-telegram"></i></a></li>
+                  <li><a href=""><i class="icon-medium"></i></a></li>
+                </ul>
+                <div class="footer__item--border"><div class="-top"></div><div class="-bottom"></div></div>
+              </div>
 
             </div>
           </div>

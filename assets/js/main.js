@@ -148,6 +148,15 @@ $(document).ready(function(){
     }
     $('body.home a[href*="#"]').bind("click", jump);
 
+    $(document).on('click', 'body.home a[href*="#"]', function (e) {
+        console.log(1)
+
+        //Close menu mb
+        $('body').removeClass('modal-open')
+        $('#menu__mobile').removeClass('active')
+        $('.menu-mb__btn').removeClass('active')
+        $('.header-mb').removeClass('-menu-mb-active')
+    });
 
 });
 

@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Orbit meta v2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/favicon.png" />
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- flickity -->
+    <link rel="stylesheet" type="text/css" href="assets/libs/flickity/flickity.min.css"/>
+
+    <link href="assets/css/main.css" rel="stylesheet">
+
+
+  </head>
+  <body class="">
+
+    <header class="page__header">
+      <div class="container-fluid d-flex align-items-center">
+
+        <div class="flex-grow-1 d-flex align-items-center">
+
+          <a href="index.html" class="page__header__logo">
+            <img src="images/logo.png" alt="">
+          </a>
+
+          <div class="dropdown app__dropdown d-none d-md-flex">
+            <button class="dropdown-toggle me-3 me-lg-4" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="icon-category"></i> App
+            </button>
+            <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenu2">
+
+              <div class="row p-3">
+                <div class="col-md-4">
+                  <div class="el__item mb-4">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="el__item mb-4">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="el__item mb-4">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="el__item">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="el__item">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="el__item">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <a href="" class="btn btn__marketplace d-none d-md-block">Marketplace</a>
+        </div>
+        <div class="ms-auto d-none d-md-block">
+          <a href="" class="btn btn__marketplace -connect me-md-2 me-lg-4" data-bs-toggle="modal" data-bs-target="#connectWalletModal">Connect Wallet</a>
+          <div class="ddropdown js-ddropdown -border-left px-3 py-4 p-lg-4">
+            <button class="ddropdown__label login__link js-ddropdown-toggle" type="button">
+              <span class="icon-user"></span> Login
+            </button>
+            <ul class="ddropdown-menu">
+              <li><a href="">Wallet</a></li>
+              <li><a href="">Transactions</a></li>
+              <li><a href="">Your NTFs</a></li>
+              <li><a href="">Make a Profile</a></li>
+              <li><a href="">Disconnect <i class="icon-logout"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="#" class="menu-mb__btn ms-auto d-md-none" data-id="menu__mobile">
+          <i class="icon-dots-menu"></i>
+        </a>
+
+      </div>
+    </header>
+
+    <div class="wrap__page">
+      <div class="container-full">
+
+        <div class="d-flex">
+          <div class="market__sidebar col-300">
+            <aside class="widget-area widget__left widget__fix">
+              <div class="sidebar__inner">
+
+                <div class="sidebar__header d-none d-md-block">
+                    <ul>
+                      <li class=""><a href="marketplace.html">Characters</a></li>
+                      <li class="active"><a href="marketplace-pet.html">Pets</a></li>
+                      <li><a href="marketplace-treasure.html">Treasure Combo</a></li>
+                    </ul>
+                </div>
+
+                <div class="widget p-4">
+                  <div class="d-md-none pb-4">
+                    <div class="widget-area__close icon-close js-widget--toggle"></div>
+                  </div>
+
+                  <form action="">
+                      <ul class="market-sidebar__header mb-3">
+                        <li class="d-flex align-items-center">
+                          <div class="el__label">Filter</div>
+                          <div class="el__reset js-reset-market ms-auto">Reset</div>
+                        </li>
+                      </ul>
+
+                      <div class="market-widget market__search">
+                        <div class="market__search__content">
+                          <input type="text" name="s" class="market__search__field form-control" placeholder="Search" autocomplete="off" >
+                          <button class="market__search__btn"></button>
+                        </div>
+                      </div>
+
+                      <hr class="my-4">
+
+                      <div class="market-widget market__rarity">
+                        <div class="market-widget__header -collapse">
+                          <a class="market-widget__title" data-bs-toggle="collapse" href="#market-widget--collapse01" role="button" aria-expanded="true" aria-controls="market-widget--collapse01">Grade</a>
+                        </div>
+
+                        <div class="multi-collapse collapse show" id="market-widget--collapse01">
+                          <ul class="market__checkbox">
+                            <li><label class="checkmark__item">
+                              <input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">All</span></label>
+                            </li>
+                            <li>
+                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Normal</span></label>
+                            </li>
+                            <li>
+                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Rare</span></label>
+                            </li>
+                            <li>
+                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Epic</span></label>
+                            </li>
+                            <li>
+                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Legendary</span></label>
+                            </li>
+                            <li>
+                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Mythical</span></label>
+                            </li>
+                          </ul>
+                        </div>
+                      </div><!-- .market-widget -->
+
+                      <hr class="my-4">
+
+                      <div class="market-widget market__star">
+                        <div class="market-widget__header d-flex align-items-center">
+                          <h3 class="market-widget__title">Star</h3>
+                          <div class="star__wrap ms-auto">
+                            <div class="star-rating">
+                              <input id="star-5" type="radio" name="rating" value="star-5" />
+                              <label for="star-5" title="5 stars">
+                                <i class="icon-star"></i>
+                              </label>
+                              <input id="star-4" type="radio" name="rating" value="star-4" />
+                              <label for="star-4" title="4 stars">
+                                <i class="icon-star"></i>
+                              </label>
+                              <input id="star-3" type="radio" name="rating" value="star-3" />
+                              <label for="star-3" title="3 stars">
+                                <i class="icon-star"></i>
+                              </label>
+                              <input id="star-2" type="radio" name="rating" value="star-2" />
+                              <label for="star-2" title="2 stars">
+                                <i class="icon-star"></i>
+                              </label>
+                              <input id="star-1" type="radio" name="rating" value="star-1" checked />
+                              <label for="star-1" title="1 star">
+                                <i class="icon-star"></i>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <!-- .market-widget -->
+                      <hr class="my-4">
+
+                      <div class="market-widget market__rarity">
+                        <div class="market-widget__header -collapse">
+                          <a class="market-widget__title" data-bs-toggle="collapse" href="#market-widget--collapse02" role="button" aria-expanded="true" aria-controls="market-widget--collapse02">Breed Count</a>
+                        </div>
+
+                        <div class="multi-collapse collapse show" id="market-widget--collapse02">
+                          <ul class="market__radio--horizontal row row-cols-6 gx-2">
+                            <li><label class="radio2__item">
+                              <input type="radio" name="cate" value="" checked><span class="checkmark"></span>Any</label>
+                            </li>
+                            <li>
+                              <label class="radio2__item"><input type="radio" name="cate" value=""><span class="checkmark"></span>1</label>
+                            </li>
+                            <li>
+                              <label class="radio2__item"><input type="radio" name="cate" value=""><span class="checkmark"></span>2</label>
+                            </li>
+                            <li>
+                              <label class="radio2__item"><input type="radio" name="cate" value=""><span class="checkmark"></span>3</label>
+                            </li>
+                            <li>
+                              <label class="radio2__item"><input type="radio" name="cate" value=""><span class="checkmark"></span>4</label>
+                            </li>
+                            <li>
+                              <label class="radio2__item"><input type="radio" name="cate" value=""><span class="checkmark"></span>5</label>
+                            </li>
+                          </ul>
+                        </div>
+                      </div><!-- .market-widget -->
+                      <hr class="my-4">
+
+                      <div class="market-widget market__rarity">
+                        <div class="market-widget__header -collapse">
+                          <a class="market-widget__title" data-bs-toggle="collapse" href="#market-widget--collapse03" role="button" aria-expanded="true" aria-controls="market-widget--collapse03">Purebred</a>
+                        </div>
+
+                        <div class="multi-collapse collapse show" id="market-widget--collapse03">
+                          <ul class="market__checkbox">
+                            <li><label class="checkmark__item">
+                              <input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">All</span></label>
+                            </li>
+                            <li>
+                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Clover</span></label>
+                            </li>
+                            <li>
+                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Macaw</span></label>
+                            </li>
+                            <li>
+                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Jumba</span></label>
+                            </li>
+                            <li>
+                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Vaneer</span></label>
+                            </li>
+                            <li>
+                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Owl</span></label>
+                            </li>
+                            <li>
+                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Vela</span></label>
+                            </li>
+                            <li>
+                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Hary</span></label>
+                            </li>
+                            <li>
+                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Centaur</span></label>
+                            </li>
+                            <li>
+                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Puppar</span></label>
+                            </li>
+                            <li>
+                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Tigon</span></label>
+                            </li>
+                          </ul>
+                        </div>
+                      </div><!-- .market-widget -->
+
+                    </form>
+
+                </div>
+
+              </div>
+            </aside><!-- #secondary -->
+          </div>
+          <div class="w-100 flex-grow-1">
+
+            <div class="market__mb d-flex justify-content-between d-md-none px-4 py-2">
+              <div class="btn-group">
+                <button class="btn dropdown-toggle border text-white font14" type="button" id="widgetmb_header" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Characters</button>
+                <ul class="dropdown-menu dropdown-menu-start dropdown-menu-dark p-3" aria-labelledby="widgetmb_header">
+                  <li class="active mb-3"><a href="marketplace.html" class="text-white">Characters</a></li>
+                  <li class="mb-3"><a href="marketplace-pet.html" class="text-white">Pets</a></li>
+                  <li class=""><a href="marketplace-treasure.html" class="text-white">Treasure Combo</a></li>
+                </ul>
+              </div>
+
+              <div class="border rounded font14 px-4 py-2 js-widget--toggle">Filter</div>
+            </div>
+
+            <div class="market__content">
+
+              <div class="market__content__top d-flex justify-content-between align-items-center mb-4">
+                <div>767 pets</div>
+                <div class="d-flex align-items-center">
+                  <span class="me-3 d-none d-md-block">Sort by</span>
+                  <div class="btn-group">
+                    <button class="btn btn__sortby dropdown-toggle" type="button" id="dropdownMenuSortby" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Lowest Price</button>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="dropdownMenuSortby">
+                      <li><a class="dropdown-item" href="#">Lowest Price</a></li>
+                      <li><a class="dropdown-item" href="#">Lowest ID</a></li>
+                      <li><a class="dropdown-item" href="#">Highest ID</a></li>
+                      <li><a class="dropdown-item" href="#">Lowest Price</a></li>
+                      <li><a class="dropdown-item" href="#">Highest Price</a></li>
+                      <li><a class="dropdown-item" href="#">Latest</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="market__content__main">
+                <div class="d-flex justify-content-center justify-content-xl-start flex-wrap g-3">
+
+                  <div class="el__col m-2">
+                    <div class="market__item -character">
+                      <a href="pet-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pet2/marketplace-pet2-01.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Fortify count:  3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+                  <div class="el__col m-2">
+                    <div class="market__item -character">
+                      <a href="pet-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pet2/marketplace-pet2-02.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Fortify count:  3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+                  <div class="el__col m-2">
+                    <div class="market__item -character">
+                      <a href="pet-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pet2/marketplace-pet2-03.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Fortify count:  3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+                  <div class="el__col m-2">
+                    <div class="market__item -character">
+                      <a href="pet-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pet2/marketplace-pet2-04.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Fortify count:  3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+                  <div class="el__col m-2">
+                    <div class="market__item -character">
+                      <a href="pet-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pet2/marketplace-pet2-05.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Fortify count:  3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+                  <div class="el__col m-2">
+                    <div class="market__item -character">
+                      <a href="pet-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pet2/marketplace-pet2-06.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Fortify count:  3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+                  <div class="el__col m-2">
+                    <div class="market__item -character">
+                      <a href="pet-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pet2/marketplace-pet2-07.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Fortify count:  3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+                  <div class="el__col m-2">
+                    <div class="market__item -character">
+                      <a href="pet-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pet2/marketplace-pet2-08.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Fortify count:  3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+                  <div class="el__col m-2">
+                    <div class="market__item -character">
+                      <a href="pet-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pet2/marketplace-pet2-09.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Fortify count:  3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+                  <div class="el__col m-2">
+                    <div class="market__item -character">
+                      <a href="pet-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pet2/marketplace-pet2-10.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Fortify count:  3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+                  <div class="el__col m-2">
+                    <div class="market__item -character">
+                      <a href="pet-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/pet2/marketplace-pet2-11.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Fortify count:  3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+
+                </div>
+
+                <nav class="navigation paging-navigation mt-4" role="navigation">
+                  <div class="pagination loop-pagination d-flex align-items-center justify-content-center">
+                    <a class="prev page-numbers rounded px-4 py-2" href="#"><span class="icon-arrow-left"></span></a>
+                    <span class="ms-3">Page</span>
+                    <input type="number" class="navigation__input ms-3" value="1" min="1">
+                    <span class="ms-3"> of 27.531</span>
+                    <a class="next page-numbers rounded px-4 py-2 ms-3" href="#"><span class="icon-arrow-right"></span></a>
+                  </div><!-- .pagination -->
+                </nav>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- .wrap__page -->
+
+
+    <!-- Modal -->
+    <div class="modal wl__modal -connect fade" id="connectWalletModal" tabindex="-1" aria-labelledby="connectWalletModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header -border -border__bottom">
+            <h3 class="modal-title" id="connectWalletTitle">Connect wallet</h3>
+            <button type="button" class="-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-close"></i></button>
+          </div>
+          <div class="modal-body">
+            <form action="#" method="post" class="wl__form js-attr-disable">
+              <div class="form-group scroll__wrap">
+                <ul class="wallet-list scroll__wrap__content d-flex flex-wrap justify-content-between">
+                  <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                    <input type="radio" name="token" id="wl__metamask" class="-check js-attr-checkbox">
+                    <label for="wl__metamask" class="-name order-last order-md-first"><span>Metamask</span></label>
+                    <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-metamask.png" alt=""></div>
+                  </li><!-- end tk__item -->
+                  <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                    <input type="radio" name="token" id="wl__bnb" class="-check js-attr-checkbox">
+                    <label for="wl__bnb" class="-name order-last order-md-first"><span>Binance Smart Chain</span></label>
+                    <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-bnb-light.png" alt=""></div>
+                  </li><!-- end tk__item -->
+                  <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                    <input type="radio" name="token" id="wl__eth" class="-check js-attr-checkbox">
+                    <label for="wl__eth" class="-name order-last order-md-first"><span>Ethereum</span></label>
+                    <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-eth.png" alt=""></div>
+                  </li><!-- end tk__item -->
+                  <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                    <input type="radio" name="token" id="wl__usdt" class="-check js-attr-checkbox">
+                    <label for="wl__usdt" class="-name order-last order-md-first"><span>Deff</span></label>
+                    <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-deffzone.png" alt=""></div>
+                  </li><!-- end tk__item -->
+                </ul>
+              </div><!-- end form-group -->
+              <button class="btn -wallet -submit -disabled js-attr-button form-control" disabled type="submit"><span>Connect wallet</span></button>
+              <div class="-note text-center mt-4">No wallet found. Make sure extension is installed.</div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <nav id="menu__mobile" class="nav__mobile -st2">
+
+        <div class="nav__mobile__close icon-close js-menu__close"></div>
+
+        <div class="nav__mobile__content">
+          <ul class="nav__mobile--ul">
+            <li class="menu-item active"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="game.html">Games</a></li>
+            <li class="menu-item"><a href="#">Metaverse</a></li>
+            <li class="menu-item"><a href="#">Pitch Deck</a></li>
+            <li class="menu-item menu-item-has-children">
+              <a href="#">Products</a>
+              <ul class="sub-menu">
+                <li><a href="">Marketplace</a></li>
+                <li><a href="">Mavis Hub</a></li>
+                <li><a href="">Ronin Wallet</a></li>
+                <li><a href="">Ronin Explorer</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="px-4">
+            <div>
+              <a href="" class="btn btn__marketplace -connect me-md-2 me-lg-4" data-bs-toggle="modal" data-bs-target="#connectWalletModal">Connect Wallet</a>
+            </div>
+            <div>
+              <a href="" class="login__link"><span class="icon-user"></span> Login</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/libs/flickity/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -504,6 +504,11 @@
 			&__wrap{
 				width: 400px;
 			}
+			&:hover{
+				.dnfix__thumb{
+					transform: translateY(-5px);
+				}
+			}
 			&__thumb{
 				width: 100%;
 				padding: 60px 30px 45px;
@@ -576,32 +581,28 @@
 					z-index: 1;
 					width: 100%;
 					height: 100%;
+					animation: lightAnimation 2s ease-in-out infinite;
 				}
-				&:before{
+				&:before, &:after{
 					content: '';
     				position: absolute;
+					background: url(../img/home-tokenmoics-circle.png);
+				    background-repeat: no-repeat;
+				    background-size: contain;
+				    pointer-events: none;
+				    animation: 300s linear infinite spinner-rotate;
+				}
+				&:before{
 				    top: -19%;
 				    left: -25%;
 				    width: 150%;
 				    height: 150%;
-				    background: url(../img/home-tokenmoics-circle.png);
-				    background-repeat: no-repeat;
-				    background-size: contain;
-				    pointer-events: none;
-				    animation: 60s ease-in-out infinite spinner-rotate;
 				}
 				&:after{
-					content: '';
-    				position: absolute;
 				    top: -94%;
 				    left: -100%;
 				    width: 300%;
 				    height: 300%;
-				    background: url(../img/home-tokenmoics-circle.png);
-				    background-repeat: no-repeat;
-				    background-size: contain;
-				    pointer-events: none;
-				    animation: 60s ease-in-out infinite spinner-rotate2;
 				}
 			}
 			&__text{
@@ -1446,7 +1447,6 @@
 			    &>p{
 			    	width: 78px;
 			    	height: 65px;
-			    	padding-bottom: 26px;
 			    }
 			}
 

@@ -534,7 +534,6 @@
 					background-repeat: no-repeat;
 					background-size: contain;
 					background-position: calc(50% - 10px);
-					z-index: -1;
 					pointer-events: none;
 
 				}
@@ -1176,6 +1175,7 @@
 		}
 		&-battle {
 		    padding: 80px 0 160px;
+		    overflow: hidden;
 		    .flickity:after {
 			  content: 'flickity';
 			  display: none; /* hide :after */

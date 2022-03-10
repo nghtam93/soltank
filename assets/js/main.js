@@ -49,23 +49,22 @@ $(document).ready(function(){
 
         // Create wrap
         // Button click
-        $('.menu-mb__btn').click(function(e){
+        thiz.click(function(e){
 
             e.preventDefault()
 
-            if($(menu_id).hasClass('active')){
-                console.log(1)
-                // $('.dnmenu-backdrop').remove()
+            if($(this).hasClass('active')){
+                $(this).removeClass('active')
                 $('body').removeClass('modal-open')
                 $(menu_id).removeClass('active')
-                $('.menu-mb__btn').removeClass('active')
+                thiz.removeClass('active')
                 $('.header-mb').removeClass('-menu-mb-active')
 
             } else {
-
+                $(this).addClass('active')
                 $('body').addClass('modal-open')
                 $(menu_id).addClass('active')
-                $('.menu-mb__btn').addClass('active')
+                thiz.addClass('active')
                 $('.header-mb').addClass('-menu-mb-active')
 
             }
@@ -89,7 +88,7 @@ $(document).ready(function(){
             $(this).parent().find('.sub-menu').first().slideToggle()
         })
 
-        $('.nav__mobile, .header').mousedown(function(e){ e.stopPropagation(); });
+        $('.nav__mobile, .header, .header-mb').mousedown(function(e){ e.stopPropagation(); });
         $(document).mousedown(function(e){ $('.nav__mobile').removeClass('active'); $(thiz).removeClass('active'); $("body").removeClass('modal-open') });
 
         // Apply options

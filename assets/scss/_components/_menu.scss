@@ -156,6 +156,7 @@ $font-color: #fff;
 }
 
 nav ul li.-menu-button{
+    display: inline-block;
     i{
         margin-right: 10px;
     }
@@ -186,6 +187,7 @@ nav ul li.-menu-button{
         }
     }
     @media ( max-width: 1199px ) {
+
         margin: 0 50px;
     }
 }
@@ -210,6 +212,7 @@ nav ul li.-menu-button{
     font-weight: 600;
     font-size: 14px;
     pointer-events: none;
+    padding-top: 70px;
     overflow: auto;
     &--close {
         position: relative;

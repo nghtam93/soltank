@@ -50,29 +50,29 @@
     }
 }
 .btn__marketplace{
-    background: linear-gradient(86.77deg, #28224B 3.16%, #2F275C 95.88%);
-    border-radius: 30px;
-    font-weight: 500;
+    font-family: 'Changa';
+    font-weight: 700;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
     color: #FFFFFF;
     padding: 6px 20px;
+    background: linear-gradient(86.77deg, rgba(43, 90, 21, .2) 3.16%, rgba(19, 97, 59, .2) 95.88%);
+    border-radius: 8px;
+    transition: all .5s;
     &:before{
         content: "\e90b";
         font-family: icomoon;
-        color: #12C2D9;
+        color: #E09B0F;
         margin-right: 8px;
     }
     &:hover{
-        color: #fff;
-        box-shadow: 0 0 2px #fff;
-    }
-    &.-connect{
-        background: linear-gradient(88.33deg, #561484 0.81%, #741088 99.62%);
-        &:before{
-            content: "\e90d";
+        &::before {
             color: #fff;
         }
+        color: #fff;
+        background: #e19917;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, .25), inset 0px -4px 4px rgba(0, 0, 0, .25), inset 0px 4px 8px rgba(255, 255, 255, .25);
     }
 }
 .page__header{
@@ -160,9 +160,9 @@
     bottom: 0;
     height: 60%;
     width: 100%;
-    -webkit-animation: cloud_one 15s linear infinite;
-    -moz-animation: cloud_one 15s linear infinite;
-    -o-animation: cloud_one 15s linear infinite;
+    -webkit-animation: cloud_one 35s linear infinite;
+    -moz-animation: cloud_one 35s linear infinite;
+    -o-animation: cloud_one 35s linear infinite;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
@@ -177,9 +177,9 @@
     top: 0;
     height: 34%;
     width: 100%;
-    -webkit-animation: cloud_one 17s linear infinite;
-    -moz-animation: cloud_one 17s linear infinite;
-    -o-animation: cloud_one 17s linear infinite;
+    -webkit-animation: cloud_one 40s linear infinite;
+    -moz-animation: cloud_one 40s linear infinite;
+    -o-animation: cloud_one 40s linear infinite;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
@@ -316,6 +316,35 @@
     100%{left:125%}
 }
 
+// STAR ANIMATION
+
+@function multiple-box-shadow($n) {
+  $value: "#{random(2500)}px #{random(2500)}px #ecf0ee";
+  @for $i from 2 through $n {
+    $value: "#{$value} , #{random(2500)}px #{random(2500)}px #ecf0ee";
+  }
+
+  @return unquote($value);
+}
+$shadows-small: multiple-box-shadow(500);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-big: multiple-box-shadow(100);
+.stars{z-index:-1;width:1px;height:1px;background:transparent;box-shadow:$shadows-small;animation:animStar 40s linear infinite;
+    &:after{content:" ";position:absolute;top:0;width:1px;height:1px;background:transparent;box-shadow:$shadows-small;}
+}
+.stars2{z-index:-1;width:2px;height:2px;background:transparent;box-shadow:$shadows-medium;animation:animStar 90s linear infinite;
+    &:after{content:" ";position:absolute;top:0;width:2px;height:2px;background:transparent;box-shadow:$shadows-medium;}
+}
+.stars3{z-index:-1;width:3px;height:3px;background:transparent;box-shadow:$shadows-big;animation:animStar 140s linear infinite;
+    &:after{content:" ";position:absolute;top:0;width:3px;height:3px;background:transparent;box-shadow:$shadows-big;}
+}
+@media (max-width:991px){
+    .stars,.stars2,.stars3{display:none;}
+}
+@keyframes animStar{
+    from{transform:translateY(0px);}
+    to{transform:translateY(-500px);}
+}
 
 /**/
 .navigation{

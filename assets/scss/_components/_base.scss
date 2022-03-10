@@ -35,6 +35,9 @@ body {
     position: relative;
     background: #182F29;
     --header-height:70px;
+    &:not(.home){
+        background: #0F1110;
+    }
 }
 
 a, a:hover {
@@ -83,18 +86,18 @@ strong{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #130E2E;
+  background: #1D3830;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #221D3E;
+  background: #081b16;
     border-radius: 8px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #221D3E;
+  background: #081b16;
 }
 .ic-tank {
     display: inline-block;
@@ -146,11 +149,22 @@ strong{
         transform: translateY(-5px);
         -webkit-filter:brightness(1.25);filter:brightness(1.25)
     }
+
     &.-green{
         background: linear-gradient(180deg, #04A327 0%, #037C1E 100%);
     }
+    &.-small{
+        min-width: 164px;
+        padding: 8px 18px;
+        font-size: 16px;
+        line-height: 26px;
+        border-radius: 8px;
+        .icon-wallet{
+            position: relative;
+            top: 2px;
+        }
+    }
     @media (max-width:991px){
-
         min-width: 270px;
         font-size: 24px;
         line-height: 34px;
@@ -539,6 +553,9 @@ strong{
 
     .gx-lg-120{
         --bs-gutter-x: 120px;
+    }
+    .overflow-xl-hidden{
+        overflow: hidden;
     }
 }
 @media (min-width: 1300px){

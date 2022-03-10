@@ -14,9 +14,9 @@
 
 
   </head>
-  <body class="">
+  <body class="overflow-xl-hidden">
 
-    <header class="page__header">
+    <header class="page__header -market">
       <div class="container-fluid d-flex align-items-center">
 
         <div class="flex-grow-1 d-flex align-items-center">
@@ -27,7 +27,7 @@
 
           <div class="dropdown app__dropdown d-none d-md-flex">
             <button class="dropdown-toggle me-3 me-lg-4" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="icon-category"></i> App
+              <i class="icon-category me-2"></i>App
             </button>
             <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenu2">
 
@@ -85,13 +85,13 @@
             </div>
           </div>
 
-          <a href="" class="btn btn__marketplace d-none d-md-block">Marketplace</a>
+          <a href="" class="btn__marketplace d-none d-md-block">Marketplace</a>
         </div>
         <div class="ms-auto d-none d-md-block">
-          <a href="" class="btn btn__marketplace -connect me-md-2 me-lg-4" data-bs-toggle="modal" data-bs-target="#connectWalletModal">Connect Wallet</a>
+          <a href="" class="btn -small -connect me-md-2 me-lg-4" data-bs-toggle="modal" data-bs-target="#connectWalletModal"><i class="icon-wallet me-2"></i>Connect Wallet</a>
           <div class="ddropdown js-ddropdown -border-left px-3 py-4 p-lg-4">
             <button class="ddropdown__label login__link js-ddropdown-toggle" type="button">
-              <span class="icon-user"></span> Login
+              <i class="icon-user me-2"></i>Login
             </button>
             <ul class="ddropdown-menu">
               <li><a href="">Wallet</a></li>
@@ -117,14 +117,6 @@
           <div class="market__sidebar col-300">
             <aside class="widget-area widget__left widget__fix">
               <div class="sidebar__inner">
-
-                <div class="sidebar__header d-none d-md-block">
-                    <ul>
-                      <li class="active"><a href="marketplace.html">Characters</a></li>
-                      <li><a href="marketplace-pet.html">Pets</a></li>
-                      <li><a href="marketplace-treasure.html">Treasure Combo</a></li>
-                    </ul>
-                </div>
 
                 <div class="widget p-4">
                   <div class="d-md-none pb-4">
@@ -186,23 +178,23 @@
                             <div class="star-rating">
                               <input id="star-5" type="radio" name="rating" value="star-5" />
                               <label for="star-5" title="5 stars">
-                                <i class="icon-star"></i>
+                                <i class="icon-star-none"></i>
                               </label>
                               <input id="star-4" type="radio" name="rating" value="star-4" />
                               <label for="star-4" title="4 stars">
-                                <i class="icon-star"></i>
+                                <i class="icon-star-none"></i>
                               </label>
                               <input id="star-3" type="radio" name="rating" value="star-3" />
                               <label for="star-3" title="3 stars">
-                                <i class="icon-star"></i>
+                                <i class="icon-star-none"></i>
                               </label>
                               <input id="star-2" type="radio" name="rating" value="star-2" />
                               <label for="star-2" title="2 stars">
-                                <i class="icon-star"></i>
+                                <i class="icon-star-none"></i>
                               </label>
                               <input id="star-1" type="radio" name="rating" value="star-1" checked />
                               <label for="star-1" title="1 star">
-                                <i class="icon-star"></i>
+                                <i class="icon-star-none"></i>
                               </label>
                             </div>
                           </div>
@@ -219,11 +211,11 @@
           </div>
           <div class="w-100 flex-grow-1">
 
-            <div class="market__mb d-flex justify-content-between d-md-none px-4 py-2">
+            <div class="market__mb d-flex justify-content-between align-items-center d-md-none px-4 py-2">
               <div class="btn-group">
-                <button class="btn dropdown-toggle border text-white font14" type="button" id="widgetmb_header" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Characters</button>
+                <button class="dropdown-toggle border text-white font14" type="button" id="widgetmb_header" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Tank</button>
                 <ul class="dropdown-menu dropdown-menu-start dropdown-menu-dark p-3" aria-labelledby="widgetmb_header">
-                  <li class="active mb-3"><a href="marketplace.html" class="text-white">Characters</a></li>
+                  <li class="active mb-3"><a href="marketplace.html" class="text-white">Tank</a></li>
                   <li class="mb-3"><a href="marketplace-pet.html" class="text-white">Pets</a></li>
                   <li class=""><a href="marketplace-treasure.html" class="text-white">Treasure Combo</a></li>
                 </ul>
@@ -234,12 +226,21 @@
 
             <div class="market__content">
 
+
+              <div class="market__nav d-none d-md-block">
+                  <ul>
+                    <li class="active"><a href="marketplace.html">Tank</a></li>
+                    <li><a href="marketplace-pet.html">Pets</a></li>
+                    <li><a href="marketplace-treasure.html">Treasure Combo</a></li>
+                  </ul>
+              </div>
+
               <div class="market__content__top d-flex justify-content-between align-items-center mb-4">
-                <div>613.767 characters</div>
+                <div>613.767 tank</div>
                 <div class="d-flex align-items-center">
                   <span class="me-3 d-none d-md-block">Sort by</span>
                   <div class="btn-group">
-                    <button class="btn btn__sortby dropdown-toggle" type="button" id="dropdownMenuSortby" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Lowest Price</button>
+                    <button class="btn__sortby dropdown-toggle" type="button" id="dropdownMenuSortby" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Lowest Price</button>
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="dropdownMenuSortby">
                       <li><a class="dropdown-item" href="#">Lowest Price</a></li>
                       <li><a class="dropdown-item" href="#">Lowest ID</a></li>
@@ -259,7 +260,7 @@
                     <div class="market__item -character">
                       <a href="character-detail.html" class="market__item__wrap">
                         <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
                           <div class="market__item__star ms-auto">
                             <i class="icon-star"></i>
                             <i class="icon-star"></i>
@@ -269,7 +270,7 @@
                           </div>
                           <div class="market__item__thumb">
                             <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-05.png" alt="">
+                              <img src="images/collection-img-01.png" alt="">
                             </div>
                           </div>
                         </div>
@@ -284,7 +285,7 @@
                     <div class="market__item -character">
                       <a href="character-detail.html" class="market__item__wrap">
                         <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
                           <div class="market__item__star ms-auto">
                             <i class="icon-star"></i>
                             <i class="icon-star"></i>
@@ -294,33 +295,7 @@
                           </div>
                           <div class="market__item__thumb">
                             <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-01.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="market__item__price">
-                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div><!--  .col -->
-
-                  <div class="el__col m-2">
-                    <div class="market__item -character">
-                      <a href="character-detail.html" class="market__item__wrap">
-                        <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
-                          <div class="market__item__star ms-auto">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                          </div>
-                          <div class="market__item__thumb">
-                            <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-02.png" alt="">
+                              <img src="images/collection-img-02.png" alt="">
                             </div>
                           </div>
                         </div>
@@ -336,7 +311,7 @@
                     <div class="market__item -character">
                       <a href="character-detail.html" class="market__item__wrap">
                         <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
                           <div class="market__item__star ms-auto">
                             <i class="icon-star"></i>
                             <i class="icon-star"></i>
@@ -346,7 +321,7 @@
                           </div>
                           <div class="market__item__thumb">
                             <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-03.png" alt="">
+                              <img src="images/collection-img-03.png" alt="">
                             </div>
                           </div>
                         </div>
@@ -362,7 +337,7 @@
                     <div class="market__item -character">
                       <a href="character-detail.html" class="market__item__wrap">
                         <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
                           <div class="market__item__star ms-auto">
                             <i class="icon-star"></i>
                             <i class="icon-star"></i>
@@ -372,7 +347,33 @@
                           </div>
                           <div class="market__item__thumb">
                             <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-04.png" alt="">
+                              <img src="images/collection-img-04.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+
+                  <div class="el__col m-2">
+                    <div class="market__item -character">
+                      <a href="character-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/collection-img-05.png" alt="">
                             </div>
                           </div>
                         </div>
@@ -390,7 +391,7 @@
                     <div class="market__item -character">
                       <a href="character-detail.html" class="market__item__wrap">
                         <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
                           <div class="market__item__star ms-auto">
                             <i class="icon-star"></i>
                             <i class="icon-star"></i>
@@ -400,7 +401,7 @@
                           </div>
                           <div class="market__item__thumb">
                             <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-07.png" alt="">
+                              <img src="images/collection-img-02.png" alt="">
                             </div>
                           </div>
                         </div>
@@ -415,7 +416,7 @@
                     <div class="market__item -character">
                       <a href="character-detail.html" class="market__item__wrap">
                         <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
                           <div class="market__item__star ms-auto">
                             <i class="icon-star"></i>
                             <i class="icon-star"></i>
@@ -425,7 +426,7 @@
                           </div>
                           <div class="market__item__thumb">
                             <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-09.png" alt="">
+                              <img src="images/collection-img-03.png" alt="">
                             </div>
                           </div>
                         </div>
@@ -440,7 +441,7 @@
                     <div class="market__item -character">
                       <a href="character-detail.html" class="market__item__wrap">
                         <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
                           <div class="market__item__star ms-auto">
                             <i class="icon-star"></i>
                             <i class="icon-star"></i>
@@ -450,7 +451,7 @@
                           </div>
                           <div class="market__item__thumb">
                             <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-10.png" alt="">
+                              <img src="images/collection-img-05.png" alt="">
                             </div>
                           </div>
                         </div>
@@ -465,7 +466,7 @@
                     <div class="market__item -character">
                       <a href="character-detail.html" class="market__item__wrap">
                         <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
                           <div class="market__item__star ms-auto">
                             <i class="icon-star"></i>
                             <i class="icon-star"></i>
@@ -475,7 +476,7 @@
                           </div>
                           <div class="market__item__thumb">
                             <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-01.png" alt="">
+                              <img src="images/collection-img-03.png" alt="">
                             </div>
                           </div>
                         </div>
@@ -490,7 +491,7 @@
                     <div class="market__item -character">
                       <a href="character-detail.html" class="market__item__wrap">
                         <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
                           <div class="market__item__star ms-auto">
                             <i class="icon-star"></i>
                             <i class="icon-star"></i>
@@ -500,7 +501,7 @@
                           </div>
                           <div class="market__item__thumb">
                             <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-14.png" alt="">
+                              <img src="images/collection-img-02.png" alt="">
                             </div>
                           </div>
                         </div>
@@ -515,7 +516,7 @@
                     <div class="market__item -character">
                       <a href="character-detail.html" class="market__item__wrap">
                         <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
                           <div class="market__item__star ms-auto">
                             <i class="icon-star"></i>
                             <i class="icon-star"></i>
@@ -525,158 +526,7 @@
                           </div>
                           <div class="market__item__thumb">
                             <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-07.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="market__item__price">
-                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div><!--  .col -->
-
-                  <div class="el__col m-2">
-                    <div class="market__item -character">
-                      <a href="character-detail.html" class="market__item__wrap">
-                        <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
-                          <div class="market__item__star ms-auto">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                          </div>
-                          <div class="market__item__thumb">
-                            <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-07.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="market__item__price">
-                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div><!--  .col -->
-                  <div class="el__col m-2">
-                    <div class="market__item -character">
-                      <a href="character-detail.html" class="market__item__wrap">
-                        <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
-                          <div class="market__item__star ms-auto">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                          </div>
-                          <div class="market__item__thumb">
-                            <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-09.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="market__item__price">
-                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div><!--  .col -->
-                  <div class="el__col m-2">
-                    <div class="market__item -character">
-                      <a href="character-detail.html" class="market__item__wrap">
-                        <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
-                          <div class="market__item__star ms-auto">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                          </div>
-                          <div class="market__item__thumb">
-                            <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-10.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="market__item__price">
-                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div><!--  .col -->
-                  <div class="el__col m-2">
-                    <div class="market__item -character">
-                      <a href="character-detail.html" class="market__item__wrap">
-                        <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
-                          <div class="market__item__star ms-auto">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                          </div>
-                          <div class="market__item__thumb">
-                            <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-01.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="market__item__price">
-                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div><!--  .col -->
-                  <div class="el__col m-2">
-                    <div class="market__item -character">
-                      <a href="character-detail.html" class="market__item__wrap">
-                        <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
-                          <div class="market__item__star ms-auto">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                          </div>
-                          <div class="market__item__thumb">
-                            <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-14.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="market__item__price">
-                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div><!--  .col -->
-                  <div class="el__col m-2">
-                    <div class="market__item -character">
-                      <a href="character-detail.html" class="market__item__wrap">
-                        <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
-                          <div class="market__item__star ms-auto">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                          </div>
-                          <div class="market__item__thumb">
-                            <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-07.png" alt="">
+                              <img src="images/collection-img-01.png" alt="">
                             </div>
                           </div>
                         </div>
@@ -692,7 +542,7 @@
                     <div class="market__item -character">
                       <a href="character-detail.html" class="market__item__wrap">
                         <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
                           <div class="market__item__star ms-auto">
                             <i class="icon-star"></i>
                             <i class="icon-star"></i>
@@ -702,132 +552,7 @@
                           </div>
                           <div class="market__item__thumb">
                             <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-07.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="market__item__price">
-                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div><!--  .col -->
-                  <div class="el__col m-2">
-                    <div class="market__item -character">
-                      <a href="character-detail.html" class="market__item__wrap">
-                        <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
-                          <div class="market__item__star ms-auto">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                          </div>
-                          <div class="market__item__thumb">
-                            <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-09.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="market__item__price">
-                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div><!--  .col -->
-                  <div class="el__col m-2">
-                    <div class="market__item -character">
-                      <a href="character-detail.html" class="market__item__wrap">
-                        <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
-                          <div class="market__item__star ms-auto">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                          </div>
-                          <div class="market__item__thumb">
-                            <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-10.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="market__item__price">
-                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div><!--  .col -->
-                  <div class="el__col m-2">
-                    <div class="market__item -character">
-                      <a href="character-detail.html" class="market__item__wrap">
-                        <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
-                          <div class="market__item__star ms-auto">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                          </div>
-                          <div class="market__item__thumb">
-                            <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-01.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="market__item__price">
-                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div><!--  .col -->
-                  <div class="el__col m-2">
-                    <div class="market__item -character">
-                      <a href="character-detail.html" class="market__item__wrap">
-                        <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
-                          <div class="market__item__star ms-auto">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                          </div>
-                          <div class="market__item__thumb">
-                            <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-14.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="market__item__price">
-                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div><!--  .col -->
-                  <div class="el__col m-2">
-                    <div class="market__item -character">
-                      <a href="character-detail.html" class="market__item__wrap">
-                        <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
-                          <div class="market__item__star ms-auto">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                          </div>
-                          <div class="market__item__thumb">
-                            <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-07.png" alt="">
+                              <img src="images/collection-img-05.png" alt="">
                             </div>
                           </div>
                         </div>
@@ -839,31 +564,6 @@
                     </div>
                   </div><!--  .col -->
 
-                  <div class="el__col m-2">
-                    <div class="market__item -character">
-                      <a href="character-detail.html" class="market__item__wrap">
-                        <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
-                          <div class="market__item__star ms-auto">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                          </div>
-                          <div class="market__item__thumb">
-                            <div class="dnfix__thumb -contain">
-                              <img src="images/character/nft-gallery-07.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="market__item__price">
-                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div><!--  .col -->
 
 
                 </div>

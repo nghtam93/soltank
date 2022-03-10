@@ -1,11 +1,12 @@
 $(document).ready(function(){
 
-
-    // Stick header
-    if ( $('.header-mb').offset().top >= 10 ) $('.header-mb').addClass("is-sticky");
-    $(window).scroll(function(){
-        $(this).scrollTop()>10?$('.header-mb').addClass("is-sticky"):$('.header-mb').removeClass("is-sticky")
-    })
+     // Stick header
+    if( $('.header-mb').length ){
+        if ( $('.header-mb').offset().top >= 10 ) $('.header-mb').addClass("is-sticky");
+        $(window).scroll(function(){
+            $(this).scrollTop()>10?$('.header-mb').addClass("is-sticky"):$('.header-mb').removeClass("is-sticky")
+        })
+    }
 
 
 
@@ -157,6 +158,41 @@ $(document).ready(function(){
         $('.menu-mb__btn').removeClass('active')
         $('.header-mb').removeClass('-menu-mb-active')
     });
+
+    /*Page market*/
+
+    $('.js-widget--toggle').on("click",function(e) {
+        $('.market__sidebar').toggleClass('active')
+        $('body').toggleClass('filter-open')
+
+    })
+
+    // Widget
+
+    var e=$(".market__checkbox");
+    e.find(".has-children>label").after('<div class="togglez"><i></i></div>'),
+    e.find(".togglez").on("click",function(e){e.stopPropagation(),
+    $(this).parent().find("ul.sub-menu").is(":visible")?$(this).parent().removeClass("active"):$(this).parent().addClass("active"),
+    $(this).parent().find("ul.sub-menu").first().slideToggle()})
+
+    // Tooltip page account
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+    // ClipboardJS
+    if($(document).find('.js-item-copy').length !=0){
+        let clipboard = new ClipboardJS('.js-item-copy');
+        clipboard.on('success', function (e) {
+            let trigger_button = e.trigger;
+            // update the tooltip title, get the tooltip instance, and show it
+            trigger_button.setAttribute('data-bs-original-title', 'Copied!');
+            let btn_tooltip = bootstrap.Tooltip.getInstance(trigger_button);
+            btn_tooltip.show();
+            // reset the tooltip title
+            trigger_button.setAttribute('data-bs-original-title', 'Copy to clipboard');
+        });
+    }
 
 });
 

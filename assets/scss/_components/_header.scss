@@ -9,6 +9,7 @@
 	transition: all .5s;
 	.centered-logo{
 		transition: opacity .5s;
+		animation: lightAnimation 1.5s ease-in-out infinite;
 		img{
 			width: auto;
 			max-height: 152px;
@@ -44,13 +45,20 @@
     	text-align: center;
 		img{
 			width: auto;
-			max-height: 66px;
+			max-height: 75px;
 			transition: all .5s;
+			animation: lightAnimation 1.5s ease-in-out infinite;
 		}
 		transition: background .5s;
 		&.is-sticky{
 			background: #3b4d3e;
 			border-bottom: 1px solid rgba(255, 255, 255, 0.26);
+		}
+
+		.header__logo--mb {
+		    position: absolute;
+		    top: 5px;
+		    left: 0;
 		}
 	}
 

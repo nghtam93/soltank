@@ -165,7 +165,7 @@
 				    background: url(../img/home-intro-right.png);
 				    background-repeat: no-repeat;
 				    background-size: contain;
-				    animation: lightAnimation 2s ease-in-out infinite;
+				    animation: lightAnimation 1s ease-in-out infinite;
 				}
 				&:after{
 					content: '';
@@ -177,7 +177,7 @@
 					background: url(../img/home-intro-left.png);
 					background-repeat: no-repeat;
 					background-size: contain;
-					animation: lightAnimation 2s ease-in-out infinite;
+					animation: lightAnimation 1s ease-in-out infinite;
 				}
 
 				.-circle{
@@ -507,6 +507,7 @@
 			&:hover{
 				.dnfix__thumb{
 					transform: translateY(-5px);
+					animation: lightAnimation 1s ease-in-out infinite;
 				}
 			}
 			&__thumb{

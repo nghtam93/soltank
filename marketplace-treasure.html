@@ -16,7 +16,7 @@
   </head>
   <body class="">
 
-    <header class="page__header">
+    <header class="page__header -market">
       <div class="container-fluid d-flex align-items-center">
 
         <div class="flex-grow-1 d-flex align-items-center">
@@ -27,7 +27,7 @@
 
           <div class="dropdown app__dropdown d-none d-md-flex">
             <button class="dropdown-toggle me-3 me-lg-4" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="icon-category"></i> App
+              <i class="icon-category me-2"></i>App
             </button>
             <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenu2">
 
@@ -85,15 +85,16 @@
             </div>
           </div>
 
-          <a href="" class="btn btn__marketplace d-none d-md-block">Marketplace</a>
+          <a href="" class="btn__marketplace d-none d-md-block">Marketplace</a>
         </div>
         <div class="ms-auto d-none d-md-block">
-          <a href="" class="btn btn__marketplace -connect me-md-2 me-lg-4" data-bs-toggle="modal" data-bs-target="#connectWalletModal">Connect Wallet</a>
+          <a href="" class="btn -small -connect me-md-2 me-lg-4" data-bs-toggle="modal" data-bs-target="#connectWalletModal"><i class="icon-wallet me-2"></i>Connect Wallet</a>
           <div class="ddropdown js-ddropdown -border-left px-3 py-4 p-lg-4">
             <button class="ddropdown__label login__link js-ddropdown-toggle" type="button">
-              <span class="icon-user"></span> Login
+              <i class="icon-user me-2"></i>0x...E7ea
             </button>
             <ul class="ddropdown-menu">
+              <li><a href="token-sell.html">Token sell</a></li>
               <li><a href="">Wallet</a></li>
               <li><a href="">Transactions</a></li>
               <li><a href="">Your NTFs</a></li>
@@ -118,14 +119,6 @@
             <aside class="widget-area widget__left widget__fix">
               <div class="sidebar__inner">
 
-                <div class="sidebar__header d-none d-md-block">
-                    <ul>
-                      <li class=""><a href="marketplace.html">Characters</a></li>
-                      <li><a href="marketplace-pet.html">Pets</a></li>
-                      <li class="active"><a href="marketplace-treasure.html">Treasure Combo</a></li>
-                    </ul>
-                </div>
-
                 <div class="widget p-4">
                   <div class="d-md-none pb-4">
                     <div class="widget-area__close icon-close js-widget--toggle"></div>
@@ -146,6 +139,98 @@
                         </div>
                       </div>
 
+                      <hr class="my-4">
+
+                       <div class="market-widget market__rarity">
+                        <div class="market-widget__header -collapse">
+                          <a class="market-widget__title" data-bs-toggle="collapse" href="#market-widget--collapse01" role="button" aria-expanded="true" aria-controls="market-widget--collapse01">Grade</a>
+                        </div>
+
+                        <div class="multi-collapse collapse show" id="market-widget--collapse01">
+                          <ul class="market__checkbox">
+                            <li><label class="checkmark__item">
+                              <input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">All</span></label>
+                            </li>
+                            <li>
+                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Normal</span></label>
+                            </li>
+                            <li>
+                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Rare</span></label>
+                            </li>
+                            <li>
+                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Epic</span></label>
+                            </li>
+                            <li>
+                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Legendary</span></label>
+                            </li>
+                            <li>
+                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Mythical</span></label>
+                            </li>
+                          </ul>
+                        </div>
+                      </div><!-- .market-widget -->
+
+                      <hr class="my-4">
+
+                      <div class="market-widget market__star">
+                        <div class="market-widget__header d-flex align-items-center">
+                          <h3 class="market-widget__title">Star</h3>
+                          <div class="star__wrap ms-auto">
+                            <div class="star-rating">
+                              <input id="star-5" type="radio" name="rating" value="star-5" />
+                              <label for="star-5" title="5 stars">
+                                <i class="icon-star-none"></i>
+                              </label>
+                              <input id="star-4" type="radio" name="rating" value="star-4" />
+                              <label for="star-4" title="4 stars">
+                                <i class="icon-star-none"></i>
+                              </label>
+                              <input id="star-3" type="radio" name="rating" value="star-3" />
+                              <label for="star-3" title="3 stars">
+                                <i class="icon-star-none"></i>
+                              </label>
+                              <input id="star-2" type="radio" name="rating" value="star-2" />
+                              <label for="star-2" title="2 stars">
+                                <i class="icon-star-none"></i>
+                              </label>
+                              <input id="star-1" type="radio" name="rating" value="star-1" checked />
+                              <label for="star-1" title="1 star">
+                                <i class="icon-star-none"></i>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <!-- .market-widget -->
+                      <hr class="my-4">
+
+                      <div class="market-widget market__rarity">
+                        <div class="market-widget__header -collapse">
+                          <a class="market-widget__title" data-bs-toggle="collapse" href="#market-widget--collapse02" role="button" aria-expanded="true" aria-controls="market-widget--collapse02">Fortify Count</a>
+                        </div>
+
+                        <div class="multi-collapse collapse show" id="market-widget--collapse02">
+                          <ul class="market__radio--horizontal row row-cols-6 gx-2">
+                            <li><label class="radio2__item">
+                              <input type="radio" name="cate" value="" checked><span class="checkmark"></span>Any</label>
+                            </li>
+                            <li>
+                              <label class="radio2__item"><input type="radio" name="cate" value=""><span class="checkmark"></span>1</label>
+                            </li>
+                            <li>
+                              <label class="radio2__item"><input type="radio" name="cate" value=""><span class="checkmark"></span>2</label>
+                            </li>
+                            <li>
+                              <label class="radio2__item"><input type="radio" name="cate" value=""><span class="checkmark"></span>3</label>
+                            </li>
+                            <li>
+                              <label class="radio2__item"><input type="radio" name="cate" value=""><span class="checkmark"></span>4</label>
+                            </li>
+                            <li>
+                              <label class="radio2__item"><input type="radio" name="cate" value=""><span class="checkmark"></span>5</label>
+                            </li>
+                          </ul>
+                        </div>
+                      </div><!-- .market-widget -->
                       <hr class="my-4">
 
                       <div class="market-widget market__rarity">
@@ -208,144 +293,9 @@
                         </div>
                       </div><!-- .market-widget -->
 
-
-                      <div class="market-widget market__rarity">
-                        <div class="market-widget__header -collapse">
-                          <a class="market-widget__title" data-bs-toggle="collapse" href="#market-widget--collapse01" role="button" aria-expanded="true" aria-controls="market-widget--collapse01">Grade</a>
-                        </div>
-
-                        <div class="multi-collapse collapse show" id="market-widget--collapse01">
-                          <ul class="market__checkbox">
-                            <li><label class="checkmark__item">
-                              <input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">All</span></label>
-                            </li>
-                            <li>
-                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Normal</span></label>
-                            </li>
-                            <li>
-                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Rare</span></label>
-                            </li>
-                            <li>
-                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Epic</span></label>
-                            </li>
-                            <li>
-                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Legendary</span></label>
-                            </li>
-                            <li>
-                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Mythical</span></label>
-                            </li>
-                          </ul>
-                        </div>
-                      </div><!-- .market-widget -->
-
                       <hr class="my-4">
 
-                      <div class="market-widget market__star">
-                        <div class="market-widget__header d-flex align-items-center">
-                          <h3 class="market-widget__title">Star</h3>
-                          <div class="star__wrap ms-auto">
-                            <div class="star-rating">
-                              <input id="star-5" type="radio" name="rating" value="star-5" />
-                              <label for="star-5" title="5 stars">
-                                <i class="icon-star"></i>
-                              </label>
-                              <input id="star-4" type="radio" name="rating" value="star-4" />
-                              <label for="star-4" title="4 stars">
-                                <i class="icon-star"></i>
-                              </label>
-                              <input id="star-3" type="radio" name="rating" value="star-3" />
-                              <label for="star-3" title="3 stars">
-                                <i class="icon-star"></i>
-                              </label>
-                              <input id="star-2" type="radio" name="rating" value="star-2" />
-                              <label for="star-2" title="2 stars">
-                                <i class="icon-star"></i>
-                              </label>
-                              <input id="star-1" type="radio" name="rating" value="star-1" checked />
-                              <label for="star-1" title="1 star">
-                                <i class="icon-star"></i>
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                      </div> <!-- .market-widget -->
-                      <hr class="my-4">
 
-                      <div class="market-widget market__rarity">
-                        <div class="market-widget__header -collapse">
-                          <a class="market-widget__title" data-bs-toggle="collapse" href="#market-widget--collapse02" role="button" aria-expanded="true" aria-controls="market-widget--collapse02">Breed Count</a>
-                        </div>
-
-                        <div class="multi-collapse collapse show" id="market-widget--collapse02">
-                          <ul class="market__radio--horizontal row row-cols-6 gx-2">
-                            <li><label class="radio2__item">
-                              <input type="radio" name="cate" value="" checked><span class="checkmark"></span>Any</label>
-                            </li>
-                            <li>
-                              <label class="radio2__item"><input type="radio" name="cate" value=""><span class="checkmark"></span>1</label>
-                            </li>
-                            <li>
-                              <label class="radio2__item"><input type="radio" name="cate" value=""><span class="checkmark"></span>2</label>
-                            </li>
-                            <li>
-                              <label class="radio2__item"><input type="radio" name="cate" value=""><span class="checkmark"></span>3</label>
-                            </li>
-                            <li>
-                              <label class="radio2__item"><input type="radio" name="cate" value=""><span class="checkmark"></span>4</label>
-                            </li>
-                            <li>
-                              <label class="radio2__item"><input type="radio" name="cate" value=""><span class="checkmark"></span>5</label>
-                            </li>
-                          </ul>
-                        </div>
-                      </div><!-- .market-widget -->
-                      <hr class="my-4">
-
-                      <div class="market-widget market__rarity">
-                        <div class="market-widget__header -collapse">
-                          <a class="market-widget__title" data-bs-toggle="collapse" href="#market-widget--collapse03" role="button" aria-expanded="true" aria-controls="market-widget--collapse03">Purebred</a>
-                        </div>
-
-                        <div class="multi-collapse collapse show" id="market-widget--collapse03">
-                          <ul class="market__checkbox">
-                            <li><label class="checkmark__item">
-                              <input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">All</span></label>
-                            </li>
-                            <li>
-                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Clover</span></label>
-                            </li>
-                            <li>
-                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Macaw</span></label>
-                            </li>
-                            <li>
-                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Jumba</span></label>
-                            </li>
-                            <li>
-                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Vaneer</span></label>
-                            </li>
-                            <li>
-                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Owl</span></label>
-                            </li>
-                            <li>
-                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Vela</span></label>
-                            </li>
-                            <li>
-                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Hary</span></label>
-                            </li>
-                            <li>
-                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Centaur</span></label>
-                            </li>
-                            <li>
-                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Puppar</span></label>
-                            </li>
-                            <li>
-                              <label class="checkmark__item"><input type="checkbox" name="cate" value=""><span class="checkmark"></span><span class="-text">Tigon</span></label>
-                            </li>
-                          </ul>
-                        </div>
-                      </div><!-- .market-widget -->
-
-                      <hr class="my-4">
 
                       <div class="market-widget market__rarity">
                         <div class="market-widget__header -collapse">
@@ -395,12 +345,20 @@
 
             <div class="market__content">
 
+              <div class="market__nav d-none d-md-block">
+                  <ul>
+                    <li><a href="marketplace.html">Tank</a></li>
+                    <li><a href="marketplace-pet.html">Pets</a></li>
+                    <li class="active"><a href="marketplace-treasure.html">Treasure Combo</a></li>
+                  </ul>
+              </div>
+
               <div class="market__content__top d-flex justify-content-between align-items-center mb-4">
-                <div>767 pets</div>
+                <div>613.767 Treasure Combo</div>
                 <div class="d-flex align-items-center">
                   <span class="me-3 d-none d-md-block">Sort by</span>
                   <div class="btn-group">
-                    <button class="btn btn__sortby dropdown-toggle" type="button" id="dropdownMenuSortby" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Lowest Price</button>
+                    <button class="btn__sortby dropdown-toggle" type="button" id="dropdownMenuSortby" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Lowest Price</button>
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="dropdownMenuSortby">
                       <li><a class="dropdown-item" href="#">Lowest Price</a></li>
                       <li><a class="dropdown-item" href="#">Lowest ID</a></li>
@@ -414,13 +372,13 @@
               </div>
 
               <div class="market__content__main">
-                <div class="d-flex  justify-content-center justify-content-xl-start flex-wrap g-3">
+                <div class="d-flex justify-content-center justify-content-xl-start flex-wrap g-3">
 
                   <div class="el__col m-2">
                     <div class="market__item -character">
-                      <a href="treasure-combo-detail.html" class="market__item__wrap">
+                      <a href="character-detail.html" class="market__item__wrap">
                         <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
                           <div class="market__item__star ms-auto">
                             <i class="icon-star"></i>
                             <i class="icon-star"></i>
@@ -430,23 +388,23 @@
                           </div>
                           <div class="market__item__thumb">
                             <div class="dnfix__thumb -contain">
-                              <img src="images/pet2/marketplace-pet2-01.png" alt="">
+                              <img src="images/collection-img-01.png" alt="">
                             </div>
                           </div>
                         </div>
 
                         <div class="market__item__price">
                           <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                          <span class="-amount2 ms-auto">Fortify count:  3</span>
+                          <span class="-amount2 ms-auto">Breed count: 3</span>
                         </div>
                       </a>
                     </div>
                   </div><!--  .col -->
                   <div class="el__col m-2">
                     <div class="market__item -character">
-                      <a href="treasure-combo-detail.html" class="market__item__wrap">
+                      <a href="character-detail.html" class="market__item__wrap">
                         <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
                           <div class="market__item__star ms-auto">
                             <i class="icon-star"></i>
                             <i class="icon-star"></i>
@@ -456,23 +414,133 @@
                           </div>
                           <div class="market__item__thumb">
                             <div class="dnfix__thumb -contain">
-                              <img src="images/pet2/marketplace-pet2-02.png" alt="">
+                              <img src="images/collection-img-02.png" alt="">
                             </div>
                           </div>
                         </div>
 
                         <div class="market__item__price">
                           <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                          <span class="-amount2 ms-auto">Fortify count:  3</span>
+                          <span class="-amount2 ms-auto">Breed count: 3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+
+                  <div class="el__col m-2">
+                    <div class="market__item -character">
+                      <a href="character-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/collection-img-03.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Breed count: 3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+
+                  <div class="el__col m-2">
+                    <div class="market__item -character">
+                      <a href="character-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/collection-img-04.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Breed count: 3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+
+                  <div class="el__col m-2">
+                    <div class="market__item -character">
+                      <a href="character-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/collection-img-05.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Breed count: 3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+
+
+
+                  <div class="el__col m-2">
+                    <div class="market__item -character">
+                      <a href="character-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/collection-img-02.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Breed count: 3</span>
                         </div>
                       </a>
                     </div>
                   </div><!--  .col -->
                   <div class="el__col m-2">
                     <div class="market__item -character">
-                      <a href="treasure-combo-detail.html" class="market__item__wrap">
+                      <a href="character-detail.html" class="market__item__wrap">
                         <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
                           <div class="market__item__star ms-auto">
                             <i class="icon-star"></i>
                             <i class="icon-star"></i>
@@ -482,23 +550,23 @@
                           </div>
                           <div class="market__item__thumb">
                             <div class="dnfix__thumb -contain">
-                              <img src="images/pet2/marketplace-pet2-03.png" alt="">
+                              <img src="images/collection-img-03.png" alt="">
                             </div>
                           </div>
                         </div>
 
                         <div class="market__item__price">
                           <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                          <span class="-amount2 ms-auto">Fortify count:  3</span>
+                          <span class="-amount2 ms-auto">Breed count: 3</span>
                         </div>
                       </a>
                     </div>
                   </div><!--  .col -->
                   <div class="el__col m-2">
                     <div class="market__item -character">
-                      <a href="treasure-combo-detail.html" class="market__item__wrap">
+                      <a href="character-detail.html" class="market__item__wrap">
                         <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
                           <div class="market__item__star ms-auto">
                             <i class="icon-star"></i>
                             <i class="icon-star"></i>
@@ -508,23 +576,23 @@
                           </div>
                           <div class="market__item__thumb">
                             <div class="dnfix__thumb -contain">
-                              <img src="images/pet2/marketplace-pet2-04.png" alt="">
+                              <img src="images/collection-img-05.png" alt="">
                             </div>
                           </div>
                         </div>
 
                         <div class="market__item__price">
                           <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                          <span class="-amount2 ms-auto">Fortify count:  3</span>
+                          <span class="-amount2 ms-auto">Breed count: 3</span>
                         </div>
                       </a>
                     </div>
                   </div><!--  .col -->
                   <div class="el__col m-2">
                     <div class="market__item -character">
-                      <a href="treasure-combo-detail.html" class="market__item__wrap">
+                      <a href="character-detail.html" class="market__item__wrap">
                         <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
                           <div class="market__item__star ms-auto">
                             <i class="icon-star"></i>
                             <i class="icon-star"></i>
@@ -534,23 +602,23 @@
                           </div>
                           <div class="market__item__thumb">
                             <div class="dnfix__thumb -contain">
-                              <img src="images/pet2/marketplace-pet2-05.png" alt="">
+                              <img src="images/collection-img-03.png" alt="">
                             </div>
                           </div>
                         </div>
 
                         <div class="market__item__price">
                           <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                          <span class="-amount2 ms-auto">Fortify count:  3</span>
+                          <span class="-amount2 ms-auto">Breed count: 3</span>
                         </div>
                       </a>
                     </div>
                   </div><!--  .col -->
                   <div class="el__col m-2">
                     <div class="market__item -character">
-                      <a href="treasure-combo-detail.html" class="market__item__wrap">
+                      <a href="character-detail.html" class="market__item__wrap">
                         <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
                           <div class="market__item__star ms-auto">
                             <i class="icon-star"></i>
                             <i class="icon-star"></i>
@@ -560,23 +628,23 @@
                           </div>
                           <div class="market__item__thumb">
                             <div class="dnfix__thumb -contain">
-                              <img src="images/pet2/marketplace-pet2-06.png" alt="">
+                              <img src="images/collection-img-02.png" alt="">
                             </div>
                           </div>
                         </div>
 
                         <div class="market__item__price">
                           <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                          <span class="-amount2 ms-auto">Fortify count:  3</span>
+                          <span class="-amount2 ms-auto">Breed count: 3</span>
                         </div>
                       </a>
                     </div>
                   </div><!--  .col -->
                   <div class="el__col m-2">
                     <div class="market__item -character">
-                      <a href="treasure-combo-detail.html" class="market__item__wrap">
+                      <a href="character-detail.html" class="market__item__wrap">
                         <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
                           <div class="market__item__star ms-auto">
                             <i class="icon-star"></i>
                             <i class="icon-star"></i>
@@ -586,23 +654,24 @@
                           </div>
                           <div class="market__item__thumb">
                             <div class="dnfix__thumb -contain">
-                              <img src="images/pet2/marketplace-pet2-07.png" alt="">
+                              <img src="images/collection-img-01.png" alt="">
                             </div>
                           </div>
                         </div>
 
                         <div class="market__item__price">
                           <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                          <span class="-amount2 ms-auto">Fortify count:  3</span>
+                          <span class="-amount2 ms-auto">Breed count: 3</span>
                         </div>
                       </a>
                     </div>
                   </div><!--  .col -->
+
                   <div class="el__col m-2">
                     <div class="market__item -character">
-                      <a href="treasure-combo-detail.html" class="market__item__wrap">
+                      <a href="character-detail.html" class="market__item__wrap">
                         <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__title">Sol <span class="market__item__id">#4426465</span></div>
                           <div class="market__item__star ms-auto">
                             <i class="icon-star"></i>
                             <i class="icon-star"></i>
@@ -612,92 +681,14 @@
                           </div>
                           <div class="market__item__thumb">
                             <div class="dnfix__thumb -contain">
-                              <img src="images/pet2/marketplace-pet2-08.png" alt="">
+                              <img src="images/collection-img-05.png" alt="">
                             </div>
                           </div>
                         </div>
 
                         <div class="market__item__price">
                           <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                          <span class="-amount2 ms-auto">Fortify count:  3</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div><!--  .col -->
-                  <div class="el__col m-2">
-                    <div class="market__item -character">
-                      <a href="treasure-combo-detail.html" class="market__item__wrap">
-                        <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
-                          <div class="market__item__star ms-auto">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                          </div>
-                          <div class="market__item__thumb">
-                            <div class="dnfix__thumb -contain">
-                              <img src="images/pet2/marketplace-pet2-09.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="market__item__price">
-                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                          <span class="-amount2 ms-auto">Fortify count:  3</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div><!--  .col -->
-                  <div class="el__col m-2">
-                    <div class="market__item -character">
-                      <a href="treasure-combo-detail.html" class="market__item__wrap">
-                        <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
-                          <div class="market__item__star ms-auto">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                          </div>
-                          <div class="market__item__thumb">
-                            <div class="dnfix__thumb -contain">
-                              <img src="images/pet2/marketplace-pet2-10.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="market__item__price">
-                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                          <span class="-amount2 ms-auto">Fortify count:  3</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div><!--  .col -->
-                  <div class="el__col m-2">
-                    <div class="market__item -character">
-                      <a href="treasure-combo-detail.html" class="market__item__wrap">
-                        <div class="market__item__meta">
-                          <div class="market__item__title">Orbit <span class="market__item__id">#4426465</span></div>
-                          <div class="market__item__star ms-auto">
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                          </div>
-                          <div class="market__item__thumb">
-                            <div class="dnfix__thumb -contain">
-                              <img src="images/pet2/marketplace-pet2-11.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="market__item__price">
-                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
-                          <span class="-amount2 ms-auto">Fortify count:  3</span>
+                          <span class="-amount2 ms-auto">Breed count: 3</span>
                         </div>
                       </a>
                     </div>
@@ -717,6 +708,7 @@
 
               </div>
             </div>
+
           </div>
         </div>
       </div>

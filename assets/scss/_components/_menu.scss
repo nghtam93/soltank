@@ -192,7 +192,7 @@ nav ul li.-menu-button{
     }
     @media ( max-width: 1199px ) {
 
-        margin: 0 50px;
+        // margin: 0 50px;
     }
 }
 
@@ -249,42 +249,113 @@ nav ul li.-menu-button{
         list-style:none;
         li{
             position:relative;
-            margin-bottom: 10px;
+            &:not(:last-child){
+                margin-bottom: 16px;
+            }
             a{
-                position: relative;
-                font-weight: 600;
-                font-size: 18px;
-                line-height: 24px;
-                color: #FFFFFF;
-                padding: 15px 50px;
                 display: block;
-                text-transform: uppercase;
-                border-bottom: 1px solid transparent;
+                position: relative;
+                font-size: 30px;
+                color: #fff;
+                padding: 0;
                 transition: all .5s;
-                &:before{
-                    content: '';
-                    position:absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 0;
-                    height: 1px;
-                    background-color: #fff;
-                    transition: all .5s;
-                }
                 &:hover{
                     color:$color_primary;
                 }
             }
             &.active, &.current-menu-item, &.current_page_item, &:hover{
                 &>a{
-                    color: #fff;
-                    &:before{
-                        width: 100%;
-                    }
+                    color: #E09B0F;
+                }
+            }
+            &.active, &.current-menu-item, &.current_page_item{
+                &>a{
+                    font-weight:700;
                 }
             }
         }
     }
+
+    // &.-st2{
+
+
+        .nav__mobile__close{
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 18px;
+            z-index: 2;
+            cursor: pointer;
+        }
+        .nav__mobile__content {
+            justify-content: start;
+            text-align: left;
+            padding-top: 48px;
+        }
+        .nav__mobile--ul li{
+            padding: 12px 24px;
+            &:not(:last-child){
+                margin-bottom: 0;
+            }
+            a{
+                display: inline-block;
+                font-size: 14px;
+            }
+            .sub-menu{
+                li{
+                    // padding: 2px 12px;
+                }
+            }
+        }
+    // }
+
+    /**/
+    .sub-menu{display:none;}
+    .menu-item-has-children>a{
+        display: inline-block!important;
+    }
+    .nav__mobile__btn{
+        display: inline-block;
+        font-size:8px;
+        font-weight: 400;
+        padding:0;
+        line-height: 30px;
+        min-height: 30px;
+
+        width:40px;border:0;
+        background:none;color:#3e252b;
+        cursor:pointer;
+        &:focus{outline:none;}
+        i{
+            position: relative;
+            top: -1px;
+            font-style:inherit;color:#000;
+            font-weight: 400;
+            font-size: 6px;
+            &:before{
+                content:"\e911";display:block;font-family:'icomoon';
+                color: #fff;
+                transition:all .5s;
+            }
+        }
+    }
+    .login__link {
+        color: #FFFFFF;
+        padding: 6px 20px;
+        font-family: 'Changa';
+        font-weight: 700;
+        background: linear-gradient(180deg, #E09B0F 0%, #E0800F 100%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px -4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 8px rgba(255, 255, 255, 0.25);
+        min-width: 205px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 8px;
+        padding: 8px 18px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .sub-active > .nav__mobile__btn i:before{transform:rotate(180deg);}
+
     @media (max-width: 575px){
         width: 100%;
         .nav__mobile--ul{
@@ -305,4 +376,7 @@ nav ul li.-menu-button{
     display: flex;
     align-items: center;
     color: #fff;
+    &:hover{
+        color: #fff;
+    }
 }

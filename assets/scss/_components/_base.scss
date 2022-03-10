@@ -1,4 +1,4 @@
-$color_primary:#17B978;$color_secondary:#BEE274;
+$color_primary:#E09B0F;$color_secondary:#BEE274;
 .-color-primary{color:$color_primary;}
 
 //Default
@@ -78,6 +78,10 @@ strong{
     font-weight: 700;
 }
 
+.-color-primary{
+    color: $color_primary;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 6px;
@@ -119,6 +123,60 @@ strong{
     height: 24px;
     background: url(../img/dots-menu.svg) no-repeat;
     background-size: contain;
+}
+
+.ic-shield {
+    display: inline-block;
+    width: 24px;
+    height: 25px;
+    background: url(../img/shield_tick.svg) no-repeat;
+    background-size: contain;
+}
+.ic-info-circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/info-circle.svg) no-repeat;
+    background-size: contain;
+}
+.ic-binance{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/binance-coin.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+}
+.icon-copy {
+    color: #5D4DA3;
+    font-size: 16px;
+}
+.font14{
+    font-size: 14px;
+    line-height: 1.5;
+}
+.ic-minus{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/minus.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+}
+.ic-plus{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/plus.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+}
+
+.modal-open, .filter-open{
+    overflow: hidden;
 }
 
 
@@ -436,13 +494,13 @@ strong{
     &.show .ddropdown-menu{opacity:1;pointer-events:inherit; transition:opacity .5s;}
     .ddropdown-menu{
         position:absolute;top:100%;width:220px;right:0;
-        border:1px solid #8a47b6;
+        border:1px solid #3d4c47;
         padding:0;font-size:14px;
         pointer-events:none;opacity:0;
-        background: #581485;
+        background: #1c2120;
         z-index:1;
         border-radius: 4px;
-        box-shadow: 0 0 12px #581485;
+        // box-shadow: 0 0 12px #581485;
 
         &:before {
             content: '';
@@ -454,7 +512,7 @@ strong{
             height: 0;
             border-left: 8px solid transparent;
             border-right: 8px solid transparent;
-            border-bottom: 8px solid #8a47b6;
+            border-bottom: 8px solid #3d4c47;
         }
         li{
             transition:all .5s;
@@ -466,7 +524,7 @@ strong{
             }
             &:not(:last-child){border-bottom:1px solid rgba(0,0,0,.1);}
             &:hover{
-                background-color:rgba(72, 11, 112,1);
+                background-color:#161817;
             }
         }
         a{

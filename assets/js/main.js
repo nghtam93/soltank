@@ -98,7 +98,21 @@ $(document).ready(function(){
 
     $('.menu-mb__btn').dnmenu()
 
-
+    // check checkbox checked enable button
+    function checkDisableButton() {
+        $(".js-attr-disable").each(function () {
+          let checkBox = $(this).find(".js-attr-checkbox");
+          let btn = $(this).find(".js-attr-button");
+          checkBox.on("click", function () {
+            if ($(this).is(":checked")) {
+              $(btn).removeAttr("disabled").removeClass("-disabled");
+            } else {
+              $(btn).attr("disabled", "disabled").addClass("-disabled");
+            }
+          });
+        });
+    }
+    checkDisableButton();
 
     //Select Item
     function ddropdown(elm) {
@@ -194,6 +208,33 @@ $(document).ready(function(){
         });
     }
 
+    // Token sell
+    function isInt(n) {
+       return parseInt(n) === n
+    }
+    function number__toFixed(value) {
+        return isInt(value) ? value : value.toFixed(1);
+    }
+
+    $(document).on('click', '.input-quantity button' ,quantity_input);
+
+    function quantity_input(argument) {
+        console.log(1)
+      var input = $(this);
+      var input_type = 'plus'
+      if($(this).hasClass('input-minus')) input_type = 'minus'
+
+      var input_number =  $(this).parent('.input-quantity').find('input[type="number"]');
+      var input_number_val = (input_number.val()) ? parseFloat(input_number.val()) : 0
+      // Get Setting
+      var step = (input_number.attr('step')) ? parseFloat(input_number.attr('step')) : 1
+      var min = (input_number.attr('min')) ? parseFloat(input_number.attr('min')) : 0
+      var max = (input_number.attr('max')) ? parseFloat(input_number.attr('max')) : 999
+
+      if(input_type == 'plus') result = number__toFixed( input_number_val + step )
+      else result = number__toFixed(input_number_val - step)
+      if (result >= min && result <= max) input_number.val( result ).change();
+    }
 });
 
 

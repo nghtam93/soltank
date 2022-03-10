@@ -399,9 +399,9 @@ label{
 }
 input[type=checkbox] + .checkmark{position:absolute;left:0;}
 input[type=checkbox] + .checkmark:before{content:"";display:block;width:17px;height:17px;position:absolute;top:1px;z-index:1;border:1.5px solid #a0a3bd;box-sizing:border-box;border-radius:3px;}
-input[type=checkbox]:checked~.checkmark + span, input[type=checkbox]:hover~.checkmark + span{color:#22a9bb;}
+input[type=checkbox]:checked~.checkmark + span, input[type=checkbox]:hover~.checkmark + span{color:#04a322;}
 input[type=checkbox]:checked~.checkmark:after{content:"";position:absolute;left:7px;top:4px;width:4px;height:8px;border:solid #fff;border-width:0 1px 1px 0;transform:rotate(45deg);z-index:2;}
-input[type=checkbox]:checked~.checkmark:before{border:2px solid #22a9bb;background-color:#22a9bb;}
+input[type=checkbox]:checked~.checkmark:before{border:2px solid #04a322;background-color:#04a322;}
 
 .market__radio--horizontal{
     position: relative;
@@ -416,7 +416,7 @@ input[type=checkbox]:checked~.checkmark:before{border:2px solid #22a9bb;backgrou
                 left: calc( 50% - 9px);
                 width: 100%;
                 height: 6px;
-                background: #221D3E;
+                background: #23443B;
             }
         }
 
@@ -457,10 +457,10 @@ input[type=checkbox]:checked~.checkmark:before{border:2px solid #22a9bb;backgrou
                 right: 0;
                 margin: 0 auto;
                 z-index: 1;
-                border: 2px solid #22A9BB;
+                border: 2px solid #E09B0F;
                 box-sizing: border-box;
                 border-radius: 50%;
-                background: #221d3e;
+                background: #182F29;
         }
         // input[type=radio]:checked~.checkmark + span{color:#f5881f;}
         input[type=radio]:checked~.checkmark:after{
@@ -470,10 +470,9 @@ input[type=checkbox]:checked~.checkmark:before{border:2px solid #22a9bb;backgrou
             top: 8px;
             width: 8px;
             height: 8px;
-            border: solid #22A9BB;
             border-radius: 50%;
             z-index: 2;
-            background: #22A9BB;
+            background: #182F29;
         }
         // input[type=radio]:checked~.checkmark:before{border:2px solid #f5881f;background-color:#f5881f;}
 

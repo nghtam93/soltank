@@ -49,21 +49,24 @@ $(document).ready(function(){
 
         // Create wrap
         // Button click
-        thiz.click(function(e){
+        $('.menu-mb__btn').click(function(e){
+
             e.preventDefault()
-            if(thiz.hasClass('active')){
+
+            if($(menu_id).hasClass('active')){
+                console.log(1)
                 // $('.dnmenu-backdrop').remove()
                 $('body').removeClass('modal-open')
                 $(menu_id).removeClass('active')
-                $(thiz).removeClass('active')
-                $('.header.-fix').removeClass('-menu-mb-active')
+                $('.menu-mb__btn').removeClass('active')
+                $('.header-mb').removeClass('-menu-mb-active')
 
             } else {
 
                 $('body').addClass('modal-open')
                 $(menu_id).addClass('active')
-                $(thiz).addClass('active')
-                $('.header.-fix').addClass('-menu-mb-active')
+                $('.menu-mb__btn').addClass('active')
+                $('.header-mb').addClass('-menu-mb-active')
 
             }
         });
@@ -123,6 +126,28 @@ $(document).ready(function(){
 
     }
 
+    // Click id a
+    var jump=function(e)
+    {
+        $(document).off("scroll");
+        if (e){
+           var url = $(this).attr("href");
+           var id = url.substring(url.lastIndexOf('/') + 1);
+           target = id
+        }else{
+           var target = location.hash;
+        }
+
+        if($(target).offset() != undefined){
+            e.preventDefault();
+            $('html, body').stop().animate({
+                'scrollTop': $(target).offset().top
+            });
+
+            location.hash = target;
+        }
+    }
+    $('body.home a[href*="#"]').bind("click", jump);
 
 
 });

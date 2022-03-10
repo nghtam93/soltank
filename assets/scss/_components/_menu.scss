@@ -372,10 +372,11 @@ nav ul li.-menu-button{
 .menu-mb__btn {
     position: relative;
     cursor: pointer;
-    height: 50px;
+    height: 60px;
     display: flex;
     align-items: center;
     color: #fff;
+    font-size: 20px;
     &:hover{
         color: #fff;
     }

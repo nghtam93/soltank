@@ -77,7 +77,13 @@ a {
 strong{
     font-weight: 700;
 }
-
+hr{
+    background-color: #1D3830;
+    opacity: 1;
+}
+.ratio > * {
+    object-fit: contain;
+}
 .-color-primary{
     color: $color_primary;
 }
@@ -134,8 +140,8 @@ strong{
 }
 .ic-info-circle {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background: url(../img/info-circle.svg) no-repeat;
     background-size: contain;
 }
@@ -149,7 +155,7 @@ strong{
     pointer-events: none;
 }
 .icon-copy {
-    color: #5D4DA3;
+    color: #4A6B63;
     font-size: 16px;
 }
 .font14{
@@ -255,6 +261,64 @@ strong{
 //       display: none;
 //     }
 // }
+.abtn{
+    display: inline-block;
+    padding: 8px 24px;
+    border: 0;
+    background: linear-gradient(180deg, #E09B0F 0%, #E0800F 100%);
+    border-radius: 8px;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all .5s;
+    i{
+        font-size: 20px;
+    }
+    &:hover{
+        color: #fff;
+            background: linear-gradient(180deg, #04a327 0%, #34d14f 100%);
+    }
+}
+.sbtn{
+    min-width: 140px;
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #E09B0F;
+    border-radius: 8px;
+    background: transparent;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #E09B0F;
+    text-transform: uppercase;
+    transition: all .5s;
+    &:hover{
+        background: #e09b0f;
+        color: #fff;
+    }
+    &.-sync{
+        border-radius: 30px;
+        &:before{
+            content: "\e916";
+            font-family: icomoon;
+            display: inline-block;
+            font-size: 14px;
+            margin-right: 8px;
+            font-weight: 400;
+            position: relative;
+            top: 2px;;
+        }
+    }
+    &.-secondary{
+        background: #53398B;
+        &:hover{
+            box-shadow: 0 0 3px #fff;
+        }
+    }
+}
 
 // Fix iframe
 .videoWrapper{position:relative;padding-bottom:56.25%; /* 16:9 */height:0;}

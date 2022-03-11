@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>Soltank</title>
+    <title>Orbit meta v2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="images/favicon.png" />
 
@@ -111,65 +111,181 @@
       </div>
     </header>
 
-    <div class="wrap__page -bg token-sell__page">
+    <div class="wrap__page -bg">
       <div class="container container-1200">
-        <section class="schar__wrapper">
-          <div class="schar__box">
-            <div class="schar__header d-md-flex align-items-center">
-                <div class="col__left d-sm-flex align-items-center">
-                  <a href="marketplace-pet.html" class="schar__back d-flex align-items-center pe-3 me-3 mb-3 mb-sm-0">Back</a>
-                  <h2 class="schar__title -token-sell me-2 me-sm-4 mb-2 mb-sm-0">Incubator Round</h2>
-                </div>
-            </div>
-            <div class="schar__content">
-              <div class="row gx-lg-7">
-                <div class="col-lg-6">
-                  <div class="schar__thumb mb-5 mb-lg-0">
-                    <div class="ratio">
-                      <img src="images/S26-02.png" alt="">
+        <section class="account__page">
+          <div class="row">
+            <div class="col--left col-lg-3">
+              <div class="account__sidebar">
+                <div class="account__sidebar__inner">
+                  <div class="account__header d-flex align-items-center">
+                    <div class="account__header__thumb dnfix__thumb -contain col-auto me-3">
+                        <img src="assets/img/account.svg" alt="">
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="token-sell__content">
-
-                    <div class="mb-5 pb-3">
-                      <p class="mb-3">Booked/Total: <span class="-color-primary">6,038/5,000</span></p>
-                      <p class="mb-3">Reserved: <span class="-color-primary">0</span></p>
-                      <div><span class="me-3">End in</span>
-                        <div class="d-inline-block">
-                          <div class="token-sell__time">
-                            <div class="el__item">60</div>
-                            <div class="el__item">60</div>
-                            <div class="el__item">60</div>
-                          </div>
-                        </div>
+                    <div class="d-flex flex-grow-1">
+                      <div>
+                        <h2 class="account__header__title text__truncate">Hi John Doe</h2>
+                        <div><p class="text__truncate">Welcome back!</p></div>
+                      </div>
+                      <div class="ms-auto d-lg-none">
+                        <a href="" class="-btn--logout">Logout<i class="icon-Logout ms-2"></i></a>
                       </div>
                     </div>
-
-                    <div class="-input mb-3">
-                      <input type="text" class="form-control" value="0">
-                      <div class="-pre-fix">USDT</div>
-                    </div>
-                    <div class="-input mb-3 input-quantity">
-                      <button class="input-minus"><i class="ic-minus"></i></button>
-                      <input type="number" class="form-control" value="0" min="0" max="1000" step="1">
-                      <button class="input-plus"><i class="ic-plus"></i></button>
-                    </div>
-
-                    <button class="btn w-100">BUY NOW</button>
-
                   </div>
+                  <hr class="mb-4">
+                  <ul class="account__links d-flex d-lg-block">
+                    <li class="me-4 me-lg-0"><a href="inventory.html"><i class="icon-Graph"></i>Inventory</a></li>
+                    <li><a href="activity.html"><i class="icon-Send"></i>Activity</a></li>
+                  </ul>
+                </div> <!-- .account__sidebar__inner -->
 
+                <div class="mt-auto d-none d-lg-block">
+                  <a href="" class="-btn--logout">Logout<i class="icon-Logout ms-2"></i></a>
                 </div>
               </div>
             </div>
+            <div class="col--right col-lg-9">
+
+              <div class="account__box">
+                <div class="account__box__header d-flex">
+                  <h2 class="account__box__title">Balances</h2>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="account__box__item -s2">
+                      <div class="el__item__wrap">
+                        <div class="d-xl-flex">
+                          <div class="el__item__coin mb-3 mb-xl-0">
+                            <div class="el__item__coin dnfix__thumb -contain">
+                              <img src="assets/img/binance-coin.svg" alt="">
+                            </div>
+                          </div>
+                          <div class="el__item__meta">
+                            <p class="amount mb-1"><strong>1000000</strong> BNB</p>
+                            <p class="amount -small">0 USD</p>
+
+                            <div class="el__item__address mt-2 mb-2">
+                              <p>OBM address</p>
+                              <strong class="item__address clipboard-text text-truncate">0X9843174537789534289245978...</strong>
+                                <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard" class="btn-none item-copy js-item-copy" data-clipboard-text="0X9843174537789534289245978..."><span class="icon-copy"></span>
+                              </button>
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div> <!-- .el__item__wrap -->
+                    </div>
+                    <div class="account__box__item -s3 d-flex align-items-center justify-content-center"><i class=" -text-coming">Offer fund coming soon</i></div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="account__box__item -s2">
+                      <div class="el__item__wrap">
+                        <div class="d-xl-flex">
+                          <div class="el__item__coin mb-3 mb-xl-0">
+                            <div class="el__item__coin dnfix__thumb -contain">
+                              <img src="assets/img/obm-coin.svg" alt="">
+                            </div>
+                          </div>
+                          <div class="el__item__meta">
+                            <p class="amount mb-1"><strong>1000000</strong> OBM</p>
+                            <p class="amount -small">0 USD</p>
+
+                            <div class="el__item__address mt-2 mb-2">
+                              <p>OBM address</p>
+                              <strong class="item__address clipboard-text text-truncate">0X9843174537789534289245978...</strong>
+                              <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard" class="btn-none item-copy js-item-copy" data-clipboard-text="0X9843174537789534289245978..."><span class="icon-copy"></span></button>
+                            </div>
+
+                            <div class="d-flex">
+                              <button class="sbtn me-2">+ Add balance</button>
+                              <button class="sbtn">Withdraw to OBM</button>
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div> <!-- .el__item__wrap -->
+                    </div>
+                    <div class="account__box__item -s3">
+                        <div class="row gx-1">
+                          <div class="col-5 col-xxl-6">
+                            <p class="d-flex align-items-center font14">Offer fund <a data-bs-toggle="tooltip" data-bs-placement="top" title="Offer fund" class="btn-none item-copy ms-2"><i class="ic-info-circle"></i></button></a></p>
+                            <h4 class="-text-large">0 WETH</h4>
+                            <p class="-text-coming">0 USD</p>
+                          </div>
+                          <div class="col-7 col-xxl-6">
+                            <button class="sbtn mb-2">+ Add balance</button>
+                            <button class="sbtn">Withdraw to OBM</button>
+                          </div>
+                        </div>
+                      </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="account__box -widget">
+                <div class="account__box__header d-flex">
+                  <div class="account__box__title">Widget</div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 d-lg-flex mb-4 mb-lg-0">
+                    <div class="account__box__item w-100">
+                      <div class="d-flex align-items-center">
+                        <div class="el__item__thumb dnfix__thumb -contain col-auto">
+                          <img src="images/singleHooks-01.png" alt="">
+                        </div>
+                        <div class="flex-grow-1">
+                          <h6 class="el__item__title mb-0 mb-xl-2">Small love potion</h6>
+                          <div class="d-flex align-items-center mb-3">
+                            <span class="-text-large me-2">x0</span> <span class="-text">(Pending: 42)</span>
+                          </div>
+                          <button class="sbtn -sync">Sync Love Potion</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 d-lg-flex">
+                    <div class="account__box__item -transfer w-100">
+                      <div class="d-flex justify-content-center mb-4">
+                        <div class="d-flex">
+                          <div class="el__item__thumb -small dnfix__thumb -contain col-auto">
+                            <img src="assets/img/ic-obm.svg" alt="">
+                          </div>
+                          <div class="el__item__meta">
+                            <h6 class="el__item__title">ORBIT DAI COIN</h6>
+                            <p class="-text-large">x0</p>
+                          </div>
+                        </div>
+                        <div class="flex-grow-1 d-flex align-items-center justify-content-center">
+                          <i class="icon-arrow-right-circle"></i>
+                        </div>
+                        <div class="d-flex">
+                          <div class="el__item__thumb -small dnfix__thumb -contain col-auto">
+                            <img src="assets/img/ic-obm.svg" alt="">
+                          </div>
+                          <div class="el__item__meta">
+                            <h6 class="el__item__title">ORBIT DAI COIN</h6>
+                            <p class="-text-large">x0</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="text-center">
+                        <button class="sbtn -sync">Claim DAI token</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
-        </section>
+      </section>
       </div>
     </div> <!-- .wrap__page -->
-
-
 
     <!-- Modal -->
     <div class="modal wl__modal -connect fade" id="connectWalletModal" tabindex="-1" aria-labelledby="connectWalletModalLabel" aria-hidden="true">
@@ -214,6 +330,7 @@
       </div>
     </div>
 
+
     <nav id="menu__mobile" class="nav__mobile">
         <div class="nav__mobile__close icon-close js-menu__close"></div>
         <div class="nav__mobile__content">
@@ -243,9 +360,9 @@
         </div>
     </nav>
 
-
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="assets/libs/flickity/flickity.pkgd.min.js"></script>
+    <script src="assets/libs/clipboard.js/clipboard.min.js"></script>
     <script type="text/javascript" src="assets/js/wow.min.js"></script>
 
     <script src="assets/js/main.js"></script>

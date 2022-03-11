@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Soltank</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/favicon.png" />
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- flickity -->
+    <link rel="stylesheet" type="text/css" href="assets/libs/flickity/flickity.min.css"/>
+
+    <link href="assets/css/main.css" rel="stylesheet">
+
+
+  </head>
+  <body class="">
+
+    <header class="page__header -market">
+      <div class="container-fluid d-flex align-items-center">
+
+        <div class="flex-grow-1 d-flex align-items-center">
+
+          <a href="index.html" class="page__header__logo">
+            <img src="images/logo.png" alt="">
+          </a>
+
+          <div class="dropdown app__dropdown d-none d-md-flex">
+            <button class="dropdown-toggle me-3 me-lg-4" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="icon-category me-2"></i>App
+            </button>
+            <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenu2">
+
+              <div class="row p-3">
+                <div class="col-md-4">
+                  <div class="el__item mb-4">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="el__item mb-4">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="el__item mb-4">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="el__item">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="el__item">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="el__item">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <a href="" class="btn__marketplace d-none d-md-block">Marketplace</a>
+        </div>
+        <div class="ms-auto d-none d-md-block">
+          <a href="" class="btn -small -connect me-md-2 me-lg-4" data-bs-toggle="modal" data-bs-target="#connectWalletModal"><i class="icon-wallet me-2"></i>Connect Wallet</a>
+          <div class="ddropdown js-ddropdown -border-left px-3 py-4 p-lg-4">
+            <button class="ddropdown__label login__link js-ddropdown-toggle" type="button">
+              <i class="icon-user me-2"></i>0x...E7ea
+            </button>
+            <ul class="ddropdown-menu">
+              <li><a href="token-sell.html">Token sell</a></li>
+              <li><a href="">Wallet</a></li>
+              <li><a href="">Transactions</a></li>
+              <li><a href="">Your NTFs</a></li>
+              <li><a href="">Make a Profile</a></li>
+              <li><a href="">Disconnect <i class="icon-logout"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="#" class="menu-mb__btn ms-auto d-md-none" data-id="menu__mobile">
+          <i class="icon-dots-menu"></i>
+        </a>
+
+      </div>
+    </header>
+
+    <div class="wrap__page -bg token-sell__page">
+      <div class="container container-1200">
+        <section class="schar__wrapper">
+          <div class="schar__box">
+            <div class="schar__header d-md-flex align-items-center">
+                <div class="col__left d-sm-flex align-items-center">
+                  <a href="marketplace.html" class="schar__back d-flex align-items-center pe-3 me-3 mb-3 mb-sm-0">Back</a>
+                  <h2 class="schar__title -token-sell me-2 me-sm-4 mb-2 mb-sm-0">STK #4426465</h2>
+                  <div class="market__item__star ms-auto">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                </div>
+                <div class="col__right schar__sub ms-auto">
+                  Item Information
+                </div>
+            </div>
+            <div class="schar__content">
+              <div class="row gx-lg-5">
+                <div class="col-lg-5">
+                  <div class="schar__thumb mb-5 mb-lg-0">
+                    <div class="ratio">
+                      <img src="images/single-tank.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="schar__box__item">
+                    <div class="row flex-xl-nowrap">
+                      <div class="col mb-2 mb-xl-0">
+                        <p class="el__title">Level</p>
+                        <p class="el__sub">4</p>
+                      </div>
+                      <div class="col mb-2 mb-xl-0">
+                        <p class="el__title">Breed count</p>
+                        <p class="el__sub">0/7</p>
+                      </div>
+                      <div class="col-12 col-xl">
+                        <p class="el__title">Owner</p>
+                        <p class="el__sub -address text-truncate">0x13f389e56...40955f086</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="scharTab">
+                    <ul class="nav nav-tabs border-0" id="scharTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="single1-tab" data-bs-toggle="tab" data-bs-target="#single1" type="button" role="tab" aria-controls="single1" aria-selected="true">Stats</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="single2-tab" data-bs-toggle="tab" data-bs-target="#single2" type="button" role="tab" aria-controls="single2" aria-selected="false">Body parts</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="single3-tab" data-bs-toggle="tab" data-bs-target="#single3" type="button" role="tab" aria-controls="single3" aria-selected="false">Abilities</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="single4-tab" data-bs-toggle="tab" data-bs-target="#single4" type="button" role="tab" aria-controls="single4" aria-selected="false">Parents</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="scharTabContent">
+                      <div class="tab-pane fade show active" id="single1" role="tabpanel" aria-labelledby="single1-tab">
+                        <div class="row gx-2">
+                          <div class="col-sm-6 col-xl-4">
+                            <div class="stats__item d-flex align-items-center mb-3">
+                              <div class="stats__item__thumb dnfix__thumb -contain">
+                                <img src="images/schar-ellipse.png" alt="">
+                              </div>
+                              <div class="stats__item__meta">
+                                <h3 class="stats__item__title">Starter Mana</h3>
+                                <div class="stats__item__sub">49</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-xl-4">
+                            <div class="stats__item d-flex align-items-center mb-3">
+                              <div class="stats__item__thumb dnfix__thumb -contain">
+                                <img src="images/schar-ellipse.png" alt="">
+                              </div>
+                              <div class="stats__item__meta">
+                                <h3 class="stats__item__title">Bonus Gold</h3>
+                                <div class="stats__item__sub">49</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-xl-4">
+                            <div class="stats__item d-flex align-items-center mb-3">
+                              <div class="stats__item__thumb dnfix__thumb -contain">
+                                <img src="images/schar-ellipse.png" alt="">
+                              </div>
+                              <div class="stats__item__meta">
+                                <h3 class="stats__item__title">Mana Cost</h3>
+                                <div class="stats__item__sub">49</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="single2" role="tabpanel" aria-labelledby="single2-tab">
+                        <div class="row gx-2">
+                          <div class="col-sm-6 col-xl-4">
+                            <div class="stats__item -body d-flex align-items-center">
+                              <div class="stats__item__thumb dnfix__thumb -contain">
+                                <img src="images/schar-ellipse.png" alt="">
+                              </div>
+                              <div class="stats__item__meta">
+                                <h3 class="stats__item__title">Little Owl</h3>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-xl-4">
+                            <div class="stats__item -body d-flex align-items-center">
+                              <div class="stats__item__thumb dnfix__thumb -contain">
+                                <img src="images/schar-ellipse.png" alt="">
+                              </div>
+                              <div class="stats__item__meta">
+                                <h3 class="stats__item__title">Earwing</h3>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-xl-4">
+                            <div class="stats__item -body d-flex align-items-center">
+                              <div class="stats__item__thumb dnfix__thumb -contain">
+                                <img src="images/schar-ellipse.png" alt="">
+                              </div>
+                              <div class="stats__item__meta">
+                                <h3 class="stats__item__title">Watering Can</h3>
+                                <div class="stats__item__sub">Level 1</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-xl-4">
+                            <div class="stats__item -body d-flex align-items-center">
+                              <div class="stats__item__thumb dnfix__thumb -contain">
+                                <img src="images/schar-ellipse.png" alt="">
+                              </div>
+                              <div class="stats__item__meta">
+                                <h3 class="stats__item__title">Cute Bunny</h3>
+                                <div class="stats__item__sub">Level 1</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-xl-4">
+                            <div class="stats__item -body d-flex align-items-center">
+                              <div class="stats__item__thumb dnfix__thumb -contain">
+                                <img src="images/schar-ellipse.png" alt="">
+                              </div>
+                              <div class="stats__item__meta">
+                                <h3 class="stats__item__title">Babylonia</h3>
+                                <div class="stats__item__sub">Level 1</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-xl-4">
+                            <div class="stats__item -body d-flex align-items-center">
+                              <div class="stats__item__thumb dnfix__thumb -contain">
+                                <img src="images/schar-ellipse.png" alt="">
+                              </div>
+                              <div class="stats__item__meta">
+                                <h3 class="stats__item__title">Nut Cracker</h3>
+                                <div class="stats__item__sub">Level 1</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="single3" role="tabpanel" aria-labelledby="single3-tab">
+                        <div class="row gx-5">
+                          <div class="col-md-6">
+                            <p class="abilities__header__title">PVE Skill</p>
+                            <div class="row gx-2">
+                              <div class="col-6">
+                                <div class="abilities__item">
+                                  <div class="abilities__item__thumb">
+                                    <div class="dnfix__thumb -contain">
+                                      <img src="images/schar-rectangle.png" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-6">
+                                <div class="abilities__item">
+                                   <div class="abilities__item__thumb">
+                                    <div class="dnfix__thumb -contain">
+                                      <img src="images/schar-rectangle.png" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <p class="abilities__header__title">PVP Skill</p>
+                            <div class="row gx-2">
+                              <div class="col-6">
+                                <div class="abilities__item">
+                                  <div class="el__item__thumb">
+                                    <div class="dnfix__thumb -contain">
+                                      <img src="images/schar-rectangle.png" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-6">
+                                <div class="abilities__item">
+                                  <div class="abilities__item__thumb">
+                                    <div class="dnfix__thumb -contain">
+                                      <img src="images/schar-rectangle.png" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="single4" role="tabpanel" aria-labelledby="single4-tab">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="parent__item">
+                              <div class="parent__item__meta">
+                                <h3 class="parent__item__title">Tank <span>#4426465</span></h3>
+                                <div class="parent__item__sub mb-3">Breed count: 3</div>
+                              </div>
+                              <div class="parent__item__thumb">
+                                <div class="dnfix__thumb -contain">
+                                  <img src="images/marketplace-pet2-01.png" alt="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm-6">
+                            <div class="parent__item">
+                              <div class="parent__item__meta">
+                                <h3 class="parent__item__title">Tank <span>#4426465</span></h3>
+                                <div class="parent__item__sub mb-3">Breed count: 3</div>
+                              </div>
+                              <div class="parent__item__thumb">
+                                <div class="dnfix__thumb -contain">
+                                  <img src="images/marketplace-pet2-08.png" alt="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="schar__price">
+                    <div class="d-flex align-items-center flex-wrap justify-content-center justify-content-sm-start">
+                      <div class="flex-grow-1 d-flex align-items-center justify-content-center justify-content-sm-start mb-3 mb-sm-0">
+                        <i class="ic-binance me-3"></i>
+                        <span class="amount me-3">0.02 BNB</span><span class="amount -small">$34</span>
+                      </div>
+                      <div class="ms-sm-auto">
+                        <a href="" class="btn -buynow"><span>BUY NOW</span></a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div> <!-- .wrap__page -->
+
+    <!-- Modal -->
+    <div class="modal wl__modal -connect fade" id="connectWalletModal" tabindex="-1" aria-labelledby="connectWalletModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header -border -border__bottom">
+            <h3 class="modal-title" id="connectWalletTitle">Connect wallet</h3>
+            <button type="button" class="-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-close"></i></button>
+          </div>
+          <div class="modal-body">
+            <form action="#" method="post" class="wl__form js-attr-disable">
+              <div class="form-group scroll__wrap">
+                <ul class="wallet-list scroll__wrap__content d-flex flex-wrap justify-content-between">
+                  <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                    <input type="radio" name="token" id="wl__metamask" class="-check js-attr-checkbox">
+                    <label for="wl__metamask" class="-name order-last order-md-first"><span>Metamask</span></label>
+                    <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-metamask.png" alt=""></div>
+                  </li><!-- end tk__item -->
+                  <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                    <input type="radio" name="token" id="wl__bnb" class="-check js-attr-checkbox">
+                    <label for="wl__bnb" class="-name order-last order-md-first"><span>Binance Smart Chain</span></label>
+                    <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-bnb-light.png" alt=""></div>
+                  </li><!-- end tk__item -->
+                  <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                    <input type="radio" name="token" id="wl__eth" class="-check js-attr-checkbox">
+                    <label for="wl__eth" class="-name order-last order-md-first"><span>Ethereum</span></label>
+                    <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-eth.png" alt=""></div>
+                  </li><!-- end tk__item -->
+                  <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                    <input type="radio" name="token" id="wl__usdt" class="-check js-attr-checkbox">
+                    <label for="wl__usdt" class="-name order-last order-md-first"><span>Deff</span></label>
+                    <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-deffzone.png" alt=""></div>
+                  </li><!-- end tk__item -->
+                </ul>
+              </div><!-- end form-group -->
+              <button class="btn -wallet -submit -disabled js-attr-button form-control" disabled type="submit"><span>Connect wallet</span></button>
+              <div class="-note text-center mt-4">No wallet found. Make sure extension is installed.</div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <nav id="menu__mobile" class="nav__mobile">
+        <div class="nav__mobile__close icon-close js-menu__close"></div>
+        <div class="nav__mobile__content">
+          <ul class="nav__mobile--ul">
+            <li class="menu-item active"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="#">Games</a></li>
+            <li class="menu-item"><a href="#">Metaverse</a></li>
+            <li class="menu-item"><a href="#">Pitch Deck</a></li>
+            <li class="menu-item menu-item-has-children">
+              <a href="#">Products</a>
+              <ul class="sub-menu">
+                <li><a href="">Marketplace</a></li>
+                <li><a href="">Mavis Hub</a></li>
+                <li><a href="">Ronin Wallet</a></li>
+                <li><a href="">Ronin Explorer</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="px-4">
+            <div class="mb-4">
+              <a href="" class="btn btn__marketplace -connect me-md-2 me-lg-4" data-bs-toggle="modal" data-bs-target="#connectWalletModal">Connect Wallet</a>
+            </div>
+            <div>
+              <a href="" class="login__link"><span class="icon-user"></span> Login</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/libs/flickity/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

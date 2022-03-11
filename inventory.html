@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Soltank</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/favicon.png" />
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- flickity -->
+    <link rel="stylesheet" type="text/css" href="assets/libs/flickity/flickity.min.css"/>
+
+    <link href="assets/css/main.css" rel="stylesheet">
+
+
+  </head>
+  <body class="">
+
+    <header class="page__header -market">
+      <div class="container-fluid d-flex align-items-center">
+
+        <div class="flex-grow-1 d-flex align-items-center">
+
+          <a href="index.html" class="page__header__logo">
+            <img src="images/logo.png" alt="">
+          </a>
+
+          <div class="dropdown app__dropdown d-none d-md-flex">
+            <button class="dropdown-toggle me-3 me-lg-4" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="icon-category me-2"></i>App
+            </button>
+            <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenu2">
+
+              <div class="row p-3">
+                <div class="col-md-4">
+                  <div class="el__item mb-4">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="el__item mb-4">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="el__item mb-4">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="el__item">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="el__item">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="el__item">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <a href="" class="btn__marketplace d-none d-md-block">Marketplace</a>
+        </div>
+        <div class="ms-auto d-none d-md-block">
+          <a href="" class="btn -small -connect me-md-2 me-lg-4" data-bs-toggle="modal" data-bs-target="#connectWalletModal"><i class="icon-wallet me-2"></i>Connect Wallet</a>
+          <div class="ddropdown js-ddropdown -border-left px-3 py-4 p-lg-4">
+            <button class="ddropdown__label login__link js-ddropdown-toggle" type="button">
+              <i class="icon-user me-2"></i>0x...E7ea
+            </button>
+            <ul class="ddropdown-menu">
+              <li><a href="token-sell.html">Token sell</a></li>
+              <li><a href="">Wallet</a></li>
+              <li><a href="">Transactions</a></li>
+              <li><a href="">Your NTFs</a></li>
+              <li><a href="">Make a Profile</a></li>
+              <li><a href="">Disconnect <i class="icon-logout"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="#" class="menu-mb__btn ms-auto d-md-none" data-id="menu__mobile">
+          <i class="icon-dots-menu"></i>
+        </a>
+
+      </div>
+    </header>
+
+    <div class="wrap__page -bg">
+      <div class="container container-1200">
+        <section class="account__page">
+          <div class="row">
+            <div class="col--left col-lg-3">
+              <div class="account__sidebar">
+                <div class="account__sidebar__inner">
+                  <div class="account__header d-flex align-items-center">
+                    <div class="account__header__thumb dnfix__thumb -contain col-auto me-3">
+                        <img src="assets/img/account.svg" alt="">
+                    </div>
+                    <div class="d-flex flex-grow-1">
+                      <div>
+                        <h2 class="account__header__title text__truncate">Hi John Doe</h2>
+                        <div><p class="text__truncate">Welcome back!</p></div>
+                      </div>
+                      <div class="ms-auto d-lg-none">
+                        <a href="" class="-btn--logout">Logout<i class="icon-Logout ms-2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-4">
+                  <ul class="account__links d-flex d-lg-block">
+                    <li class="me-4 me-lg-0 active"><a href="inventory.html"><i class="icon-Graph"></i>Inventory</a></li>
+                    <li><a href="activity.html"><i class="icon-Send"></i>Activity</a></li>
+                  </ul>
+                </div> <!-- .account__sidebar__inner -->
+
+                <div class="mt-auto d-none d-lg-block">
+                  <a href="" class="-btn--logout">Logout<i class="icon-Logout ms-2"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col--right col-lg-9">
+
+              <div class="account__box">
+                <div class="account__box__header d-flex">
+                  <h2 class="account__box__title">ITEMS</h2>
+                </div>
+
+                <div class="d-flex justify-content-center justify-content-md-start flex-wrap g-3">
+                  <div class="el__col m-1">
+                    <div class="market__item -character">
+                      <a href="inventory-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">STK<span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/collection-img-01.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Breed count: 3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+                  <div class="el__col m-1">
+                    <div class="market__item -character">
+                      <a href="inventory-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">STK<span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/collection-img-01.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Breed count: 3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+                  <div class="el__col m-1">
+                    <div class="market__item -character">
+                      <a href="inventory-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">STK<span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/collection-img-01.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Breed count: 3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+                  <div class="el__col m-1">
+                    <div class="market__item -character">
+                      <a href="inventory-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">STK<span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/collection-img-01.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Breed count: 3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+                  <div class="el__col m-1">
+                    <div class="market__item -character">
+                      <a href="inventory-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">STK<span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/collection-img-01.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Breed count: 3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+                  <div class="el__col m-1">
+                    <div class="market__item -character">
+                      <a href="inventory-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">STK<span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/collection-img-01.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Breed count: 3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+                  <div class="el__col m-1">
+                    <div class="market__item -character">
+                      <a href="inventory-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">STK<span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/collection-img-01.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Breed count: 3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+                  <div class="el__col m-1">
+                    <div class="market__item -character">
+                      <a href="inventory-detail.html" class="market__item__wrap">
+                        <div class="market__item__meta">
+                          <div class="market__item__title">STK<span class="market__item__id">#4426465</span></div>
+                          <div class="market__item__star ms-auto">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                          </div>
+                          <div class="market__item__thumb">
+                            <div class="dnfix__thumb -contain">
+                              <img src="images/collection-img-01.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="market__item__price">
+                          <span class="amount">Ξ 0.02</span> <span class="-amount2 ms-2">$34</span>
+                          <span class="-amount2 ms-auto">Breed count: 3</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div><!--  .col -->
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+      </section>
+      </div>
+    </div> <!-- .wrap__page -->
+
+    <nav id="menu__mobile" class="nav__mobile -st2">
+
+        <div class="nav__mobile__close icon-close js-menu__close"></div>
+
+        <div class="nav__mobile__content">
+          <ul class="nav__mobile--ul">
+            <li class="menu-item active"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="game.html">Games</a></li>
+            <li class="menu-item"><a href="#">Metaverse</a></li>
+            <li class="menu-item"><a href="#">Pitch Deck</a></li>
+            <li class="menu-item menu-item-has-children">
+              <a href="#">Products</a>
+              <ul class="sub-menu">
+                <li><a href="">Marketplace</a></li>
+                <li><a href="">Mavis Hub</a></li>
+                <li><a href="">Ronin Wallet</a></li>
+                <li><a href="">Ronin Explorer</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="px-4">
+            <a href="" class="login__link"><span class="icon-user"></span> Login</a>
+          </div>
+        </div>
+    </nav>
+
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/libs/flickity/flickity.pkgd.min.js"></script>
+    <script src="assets/libs/clipboard.js/clipboard.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

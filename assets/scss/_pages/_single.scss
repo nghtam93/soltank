@@ -1,22 +1,5 @@
 
 .token-sell{
-	&__page{
-		position: relative;
-		&:before{
-			content: '';
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			height: 62%;
-			background: url(../img/token-sell-bg.png);
-			background-repeat: no-repeat;
-			background-size: contain;
-			background-position: bottom;
-			z-index: -1;
-			pointer-events: none;
-		}
-	}
 	&__content{
 		padding: 0 40px;
 		font-weight: 700;
@@ -101,12 +84,15 @@
 		padding: 100px 0 200px;
 	}
 	&__title{
-		color: red;
 		&.-token-sell{
 			font-weight: 700;
 			font-size: 32px;
 			line-height: 38px;
 			color: #F9F9F9;
+		}
+		&.-inventory{
+			font-size: 24px;
+			line-height: 36px;
 		}
 	}
 	&__box{
@@ -199,14 +185,16 @@
 		}
 		.nav-tabs{
 			.nav-link{
-				font-weight: bold;
+				font-weight: 700;
 				font-size: 18px;
-				line-height: 27px;
+				line-height: 21px;
+				text-align: center;
 				text-transform: capitalize;
-				color: #8E7ECE;
+				color: #4A6B63;
+    			padding: 0.5rem 25px;
 				&.active, &:hover {
-				    background-color: #3B2F78;
-				    border-color: #3B2F78;
+				    background-color: #2D4C43;
+				    border-color: #2D4C43;
 				    color: #fff;
 				}
 			}
@@ -214,7 +202,7 @@
 		.tab-content{
 			min-height: 220px;
 			padding: 32px 28px;
-			background: #3B2F78;
+			background: #2D4C43;
 			border-radius: 0 16px 16px 16px
 		}
 		.stats__item{
@@ -235,15 +223,15 @@
 			&__sub{
 				font-weight: 800;
 				font-size: 18px;
-				line-height: 27px;
-				color: #23C6DB;
+				line-height: 21px;
+				color: #FFFFFF;
 			}
 			&.-body{
 				.stats__item__sub{
 					font-size: 12px;
 					line-height: 18px;
 					font-weight: 700;
-					color: #23C6DB;;
+					color: #E09B0F;
 				}
 			}
 		}
@@ -280,19 +268,19 @@
 					font-weight: 500;
 					font-size: 12px;
 					line-height: 18px;
-					color: #22A9BB;
-					border: 1px solid #22A9BB;
+					color: #04A327;
+					border: 1px solid #04A327;
 					border-radius: 8px;
 				}
 			}
 			&__sub{
 				font-size: 12px;
 				line-height: 18px;
-				color: #8E7ECE;
+				color: #768982;
 			}
 			&__thumb{
-				background: radial-gradient(50% 50% at 50% 50%, #4237D1 0%, #433CA4 100%);
-				border: 1px solid #6C5EB0;
+				background: radial-gradient(50% 50% at 50% 50%, #387966 0%, #24614F 100%);
+				border: 1px solid #304C43;
 				border-radius: 8px;
 				transition: all .5s;
 			}
@@ -313,25 +301,23 @@
 		}
 	}
 	&__box__item{
+		border: 1px dashed #315A4E;
 		padding: 24px 32px;
-		border: 1px dashed #4E428B;
-		box-sizing: border-box;
 		border-radius: 16px;
-		margin-bottom: 52px;
+		margin-bottom: 60px;
 		.el__title{
-			font-weight: bold;
+			font-weight: 700;
 			font-size: 14px;
-			line-height: 21px;
+			line-height: 16px;
 			text-transform: uppercase;
-			color: #6352AA;
-			opacity: 0.7;
+			color: #04A327;
 			margin-bottom: 16px;
 			white-space: nowrap;
 		}
 		.el__sub{
-			font-weight: bold;
+			font-weight: 700;
 			font-size: 16px;
-			line-height: 24px;
+			line-height: 19px;
 			color: #FFFFFF;
 			&.-address{
 				max-width: 203px;
@@ -346,14 +332,20 @@
 			line-height: 36px;
 			color: #FFFFFF;
 			&.-small{
-				font-weight: normal;
+				font-weight: 700;
 				font-size: 20px;
-				line-height: 30px;
-				color: #696481;
+				line-height: 23px;
+				color: #4A6B63;
 			}
+		}
+		.-buynow{
+			min-width: 200px;
 		}
 	}
 	@media (max-width: 1199px){
+		&__content .nav-tabs .nav-link {
+		    padding: 0.5rem 20px;
+		}
 		&__sub {
 		    font-size: 18px;
 		    line-height: 28px;

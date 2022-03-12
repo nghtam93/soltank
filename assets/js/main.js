@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+    $('body').addClass('modal-open')
+    $(window).on("load", function () {
+      $('.loading-page__logo').fadeOut();
+      $('.loading-page').delay(350).fadeOut('slow');
+      $('body').removeClass('modal-open')
+    })
+
+
      // Stick header
     if( $('.header-mb').length ){
         if ( $('.header-mb').offset().top >= 10 ) $('.header-mb').addClass("is-sticky");

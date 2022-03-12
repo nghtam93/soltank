@@ -114,13 +114,11 @@ hr{
 .loading-page{position:fixed;top:0;left:0;width:100%;height:100%;
     background:#182F29;
     z-index:9999;display:flex;align-items:center;justify-content:center;
-
-font-family: 'Changa';
-font-weight: 700;
-font-size: 24px;
-line-height: 44px;
-color: #FFFFFF;
-
+    font-family: 'Changa';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+    color: #FFFFFF;
 }
 .loading-page__logo{position:relative;}
 .loading-page__circle{

@@ -760,6 +760,9 @@
 	    background-size: cover;
 	     overflow: hidden;
 
+	     .el__boxs__wrap {
+		    display: inline-block;
+		}
 	    .el__box{
 	    	&__line{
 	    		position: relative;
@@ -779,6 +782,7 @@
 				    background-size: contain;
 				    pointer-events: none;
 				    animation: lightAnimation 1s ease-in-out infinite;
+				    z-index: 2;
 	    		}
 	    		&::after {
 	    			content: '';
@@ -792,9 +796,20 @@
 	    			background-size: contain;
 	    			pointer-events: none;
 	    			animation: lightAnimation 1s ease-in-out infinite;
+	    			z-index: 2;
 	    		}
 	    	}
 	    	&.-row2{
+	    		position: relative;
+	    		// &::before {
+	    		// 	content: '';
+	    		// 	position: absolute;
+	    		// 	top: -81px;
+	    		// 	left: 0;
+	    		// 	width: 100%;
+	    		// 	height: 1px;
+		    	// 	background: #A0520A;
+	    		// }
 	    		.el__item{
 	    			margin-left: 222px;
 	    			&:after {
@@ -871,7 +886,7 @@
 		    		bottom: -125px;
 		    		width: 90px;
 		    		height: 90px;
-		    		z-index: 1;
+		    		z-index: 2;
 		    		background-image: url(../img/home-intro-circle.png);
 		    		background-repeat: no-repeat;
 		    		background-size: contain;

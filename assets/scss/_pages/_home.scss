@@ -444,6 +444,7 @@
 				text-align: center;
 				text-transform: uppercase;
 				color: #FFFFFF;
+				z-index: 2;
 				animation: 2s ease-in-out infinite Mousex;
 				>p{
 					position: relative;
@@ -451,7 +452,7 @@
 					display: flex;
 					align-items: center;
 					justify-content: center;
-					background: url(../img/home-metavers-item.svg);
+					background: url(../img/home-metavers-item.png);
 					background-size: contain;
 					width: 105px;
 					height: 90px;

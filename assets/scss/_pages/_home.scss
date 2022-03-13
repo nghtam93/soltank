@@ -591,19 +591,21 @@
 				    background-repeat: no-repeat;
 				    background-size: contain;
 				    pointer-events: none;
-				    animation: 300s linear infinite spinner-rotate;
+
 				}
 				&:before{
 				    top: -24%;
     				left: -28%;
 				    width: 150%;
 				    height: 150%;
+				    animation: 300s linear infinite spinner-rotate;
 				}
 				&:after{
 				    top: -101%;
     				left: -104%;
 				    width: 300%;
 				    height: 300%;
+				    animation: 300s linear infinite spinner-rotate2;
 				}
 			}
 			&__text{

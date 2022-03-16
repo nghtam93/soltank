@@ -144,12 +144,10 @@ $font-color: #fff;
         }
     }
     @media ( max-width: 1299px ) {
-        display: none;
+
     }
-    @media ( max-width: 1199px ) {
-        .el__menu > li > a {
-            padding: 8px 5px;
-        }
+    @media ( max-width: 991px ) {
+        display: none;
     }
 
 

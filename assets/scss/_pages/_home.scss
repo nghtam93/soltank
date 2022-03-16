@@ -814,7 +814,7 @@
 		    	// 	background: #A0520A;
 	    		// }
 	    		.el__item{
-	    			margin-left: 222px;
+	    			margin-left: 300px;
 	    			&:after {
 					    top: -40px;
 					    background-image: url(../img/arrow-down-up.svg);
@@ -829,7 +829,7 @@
 
 	    	.el__item{
 	    		position: relative;
-	    		width: 222px;
+	    		width: 300px;
 	    		font-weight: normal;
 				font-size: 16px;
 				line-height: 26px;
@@ -857,13 +857,13 @@
 					padding-left: 1.5rem;
 				}
 				&:not(:first-child){
-					margin-left: 222px;
+					margin-left: 300px;
 				}
 	    		&__title{
 		    		display: flex;
 				    align-items: center;
 				    justify-content: center;
-		    		width: 222px;
+		    		width: 300px;
 				    height: 57px;
 
 		    		background: url(../img/roadmap-label.svg);
@@ -876,7 +876,7 @@
 					text-align: center;
 					text-transform: uppercase;
 					text-shadow: 0px 1px 1px #034110;
-					margin-bottom: 24px;
+					margin: 0 auto 24px;
 		    	}
 		    	&__dot{
 		    		display: flex;

@@ -168,12 +168,13 @@
 		}
 	}
 	@media (max-width: 575px){
+		padding: 60px 0 40px;
 		&__logo__text {
-		    font-size: 30px;
+		    font-size: 24px;
 		    line-height: 30px;
 		}
 		&__logo img {
-		    max-width: 250px;
+		    max-width: 200px;
 		}
 	}
 }

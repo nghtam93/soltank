@@ -57,11 +57,12 @@
     @media (max-width:767px){
     }
     @media (max-width:575px){
+        margin-bottom: 40px;
         &__title {
-            font-size: 38px;
-            line-height: 40px;
+            font-size: 30px;
+            line-height: 36px;
             + div{
-                margin-top: 8px;
+                margin-top: 5px;
             }
         }
         &__excerpt{font-size:14px;}

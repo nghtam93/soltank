@@ -1401,9 +1401,20 @@
 			    width: 100%;
 			}
 		}
-
+		&-battle{
+			padding: 60px 0 120px;
+			.el__item__title {
+			    font-size: 20px;
+			    line-height: 28px;
+			}
+			.el__item__excerpt {
+			    font-size: 14px;
+			    line-height: 24px;
+			}
+		}
 
 		&-intro{
+    		padding: 40px 0 120px;
 			.el__box {
 			    padding: 15px 12px;
 			    .ratio {
@@ -1414,6 +1425,7 @@
 				}
 				&__title {
 				    letter-spacing: 0.405em;
+				    font-size: 16px;
 				}
 
 				&__decorate:after {
@@ -1429,6 +1441,12 @@
 			    top: -30px;
 			    width: 360px;
 			    height: 160px;
+			    background-size: 250px;
+			    background-position: center 8px;
+			}
+			.sc__header__title {
+			    font-size: 30px;
+			    line-height: 36px;
 			}
 			.slider__item__thumb:before {
 			    content: "";
@@ -1449,7 +1467,7 @@
 			    line-height: 34px;
 			}
 			.slider__item__excerpt {
-			    font-size: 16px;
+			    font-size: 14px;
 			}
 			.flickity-prev-next-button.previous::before, .flickity-prev-next-button.next::before {
 			    width: 24px;
@@ -1470,12 +1488,26 @@
 
 		}
 		&-collection{
+			padding: 60px 0 120px;
 			&:before{
 				display: none;
+			}
+
+		}
+		.collection-slider{
+			.slider__item__thumb {
+			    width: 85%;
+			    max-width: 285px;
+			    margin: 0 auto;
+			}
+			.slider__item__title {
+			    font-size: 20px;
+			    line-height: 26px;
 			}
 		}
 
 		&-tokenmoics{
+			padding: 60px 0 40px;
 			.el__box {
 			    position: relative;
 			    margin-top: 0;
@@ -1501,6 +1533,23 @@
 			    height: 350px;
 			}
 
+		}
+		&-team {
+		    padding: 60px 0 120px;
+		}
+		&-roadmap {
+		    padding: 60px 0;
+		    .el__box .el__item {
+			    font-size: 14px;
+			    line-height: 24px;
+			}
+			.el__box .el__item__title {
+			    font-size: 20px;
+			    line-height: 24px;
+			}
+		}
+		&-partners {
+		    padding: 60px 0 10px;
 		}
 
 	}

@@ -113,12 +113,16 @@
 .widget-area{
 	padding-top: 90px;
 	height: calc( 100vh - 70px);
+	min-height: 100%;
    	overflow-y: scroll;
 	border-right: 1px solid #1D3830;
 	font-size: 14px;
     line-height: 21px;
     color: #FFFFFF;
     background: #131514;
+    &.-noscroll{
+    	overflow-y: auto;
+    }
 	.sidebar__header{
 		padding: 40px 0;
 		border-bottom: 1px solid #1D3830;
@@ -132,7 +136,7 @@
 				right: 0;
 				width: 2px;
 				height: 100%;
-				background: #22A9BB;
+				background: #E09B0F;
 				opacity: 0;
 				transition: all .5s;
 			}
@@ -144,17 +148,18 @@
 					opacity: 1;
 				}
 				a{
-					color: #22A9BB;
+					color: #F8FFFC;
 				}
 			}
 		}
 		a{
 			display: block;
 			width: 100%;
-			font-weight: bold;
-			font-size: 18px;
-			line-height: 27px;
-			color: #FFFFFF;
+			font-family: 'Roboto';
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 28px;
+			color: #4A6B63;
 			transition: color .25s;
 		}
 	}

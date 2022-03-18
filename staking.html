@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Soltank</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/favicon.png" />
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- flickity -->
+    <link rel="stylesheet" type="text/css" href="assets/libs/flickity/flickity.min.css"/>
+
+    <link href="assets/css/main.css" rel="stylesheet">
+
+
+  </head>
+  <body class="">
+
+    <header class="page__header -market">
+      <div class="container-fluid d-flex align-items-center">
+
+        <div class="flex-grow-1 d-flex align-items-center">
+
+          <a href="index.html" class="page__header__logo">
+            <img src="images/logo.png" alt="">
+          </a>
+
+          <div class="dropdown app__dropdown d-none d-md-flex">
+            <button class="dropdown-toggle me-3 me-lg-4" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="icon-category me-2"></i>App
+            </button>
+            <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenu2">
+
+              <div class="row p-3">
+                <div class="col-md-4">
+                  <div class="el__item mb-4">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="el__item mb-4">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="el__item mb-4">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="el__item">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="el__item">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="el__item">
+                    <div class="el__item__meta">
+                      <h3 class="el__item__title text-white mb-3">Marketplace</h3>
+                      <div class="el__item__excerpt">Sell your game items to anyone, anywhere. They’re finally yours.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <a href="" class="btn__marketplace d-none d-md-block">Marketplace</a>
+        </div>
+        <div class="ms-auto d-none d-md-block">
+          <a href="" class="btn -small -connect me-md-2 me-lg-4" data-bs-toggle="modal" data-bs-target="#connectWalletModal"><i class="icon-wallet me-2"></i>Connect Wallet</a>
+          <div class="ddropdown js-ddropdown -border-left px-3 py-4 p-lg-4">
+            <button class="ddropdown__label login__link js-ddropdown-toggle" type="button">
+              <i class="icon-user me-2"></i>0x...E7ea
+            </button>
+            <ul class="ddropdown-menu">
+              <li><a href="token-sell.html">Token sell</a></li>
+              <li><a href="">Wallet</a></li>
+              <li><a href="">Transactions</a></li>
+              <li><a href="">Your NTFs</a></li>
+              <li><a href="">Make a Profile</a></li>
+              <li><a href="">Disconnect <i class="icon-logout"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="#" class="menu-mb__btn ms-auto d-md-none" data-id="menu__mobile">
+          <i class="icon-dots-menu"></i>
+        </a>
+
+      </div>
+    </header>
+
+    <div class="wrap__page -bg">
+      <div class="container-full">
+
+        <div class="d-flex">
+          <div class="market__sidebar col-300">
+            <aside class="widget-area widget__left widget__fix -noscroll">
+              <div class="sidebar__inner">
+
+                <div class="sidebar__header border-bottom-0">
+                  <ul>
+                    <li class="active"><a href="">Staking</a></li>
+                    <li><a href="">Farming</a></li>
+                    <li><a href="">Document</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </aside><!-- #secondary -->
+          </div>
+          <div class="w-100 flex-grow-1">
+            <div class="staking__content">
+
+              <div class="staking__nav d-md-none">
+                <ul>
+                  <li class="active"><a href="">Staking</a></li>
+                  <li><a href="">Farming</a></li>
+                  <li><a href="">Document</a></li>
+                </ul>
+              </div>
+
+              <div class="modalfake">
+                <div class="modalfake__header">
+                  <div class="modalfake__title">STAKE NFT - EARN STK</div>
+                </div>
+                <div class="modalfake__content">
+                  <ul class="el__list">
+                    <li>
+                      <div class="li__label">ARR</div>
+                      <div class="li__val ms-auto text-end">0.00%</div>
+                    </li>
+                    <li>
+                      <div class="li__label">Duration</div>
+                      <div class="li__val ms-auto text-end">
+                        <label class="radio-label__item">
+                          <input type="radio" name="cate" value="" checked><span class="checkmark"></span><span class="-text">None</span>
+                        </label>
+                        <label class="radio-label__item">
+                          <input type="radio" name="cate" value=""><span class="checkmark"></span><span class="-text">3 months</span>
+                        </label>
+                        <label class="radio-label__item">
+                          <input type="radio" name="cate" value=""><span class="checkmark"></span><span class="-text">6 months</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="li__label">Start in</div>
+                      <div class="li__val ms-auto text-end"><i class="ic-timer"></i></div>
+                    </li>
+                    <li>
+                      <div class="li__label">End in</div>
+                      <div class="li__val ms-auto text-end"><i class="ic-timer"></i></div>
+                    </li>
+                    <li>
+                      <div class="li__box">
+                        <div class="d-flex justify-content-between mb-2 mb-sm-3">
+                          <div>Staked</div>
+                          <div class="li__val">0.00</div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2 mb-sm-3">
+                          <div>Earned</div>
+                          <div class="li__val">0.00</div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2 mb-sm-3">
+                          <div>Reward</div>
+                          <div class="li__val -color-primary">0.00</div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <div>Input your NFT</div>
+                          <div><input type="text" placeholder="0.00"></div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <button class="btn w-100">Approve</button>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div> <!-- .wrap__page -->
+
+
+    <!-- Modal -->
+    <div class="modal wl__modal -connect fade" id="connectWalletModal" tabindex="-1" aria-labelledby="connectWalletModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header -border -border__bottom">
+            <h3 class="modal-title" id="connectWalletTitle">Connect wallet</h3>
+            <button type="button" class="-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-close"></i></button>
+          </div>
+          <div class="modal-body">
+            <form action="#" method="post" class="wl__form js-attr-disable">
+              <div class="form-group scroll__wrap">
+                <ul class="wallet-list scroll__wrap__content d-flex flex-wrap justify-content-between">
+                  <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                    <input type="radio" name="token" id="wl__metamask" class="-check js-attr-checkbox">
+                    <label for="wl__metamask" class="-name order-last order-md-first"><span>Metamask</span></label>
+                    <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-metamask.png" alt=""></div>
+                  </li><!-- end tk__item -->
+                  <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                    <input type="radio" name="token" id="wl__bnb" class="-check js-attr-checkbox">
+                    <label for="wl__bnb" class="-name order-last order-md-first"><span>Binance Smart Chain</span></label>
+                    <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-bnb-light.png" alt=""></div>
+                  </li><!-- end tk__item -->
+                  <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                    <input type="radio" name="token" id="wl__eth" class="-check js-attr-checkbox">
+                    <label for="wl__eth" class="-name order-last order-md-first"><span>Ethereum</span></label>
+                    <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-eth.png" alt=""></div>
+                  </li><!-- end tk__item -->
+                  <li class="tk__item d-flex flex-column flex-md-row align-items-between align-items-md-center justify-content-between">
+                    <input type="radio" name="token" id="wl__usdt" class="-check js-attr-checkbox">
+                    <label for="wl__usdt" class="-name order-last order-md-first"><span>Deff</span></label>
+                    <div class="-logo d-flex align-items-center justify-content-start justify-content-md-center mb-3 mb-md-0"><img src="./assets/img/pages/logo-deffzone.png" alt=""></div>
+                  </li><!-- end tk__item -->
+                </ul>
+              </div><!-- end form-group -->
+              <button class="btn -wallet -submit -disabled js-attr-button form-control" disabled type="submit"><span>Connect wallet</span></button>
+              <div class="-note text-center mt-4">No wallet found. Make sure extension is installed.</div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <nav id="menu__mobile" class="nav__mobile">
+        <div class="nav__mobile__close icon-close js-menu__close"></div>
+        <div class="nav__mobile__content">
+          <ul class="nav__mobile--ul">
+            <li class="menu-item"><a href="#">Total Value Locked</a></li>
+            <li class="menu-item"><a href="#">Total NFT Stake</a></li>
+            <li class="menu-item"><a href="#">STK Price</a></li>
+            <li class="menu-item"><a href="" class=""><span class="icon-user"></span> Login</a></li>
+          </ul>
+          <div class="px-4 mt-3">
+            <div>
+              <a href="" class="login__link"><span class="icon-wallet"></span> Connect Wallet</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/libs/flickity/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

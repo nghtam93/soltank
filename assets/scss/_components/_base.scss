@@ -85,7 +85,7 @@ hr{
     object-fit: contain;
 }
 .-color-primary{
-    color: $color_primary;
+    color: $color_primary!important;
 }
 
 /* width */
@@ -204,6 +204,15 @@ position: relative;
     background-size: contain;
     pointer-events: none;
 }
+.ic-timer{
+    display: inline-block;
+    width: 18px;
+    height: 21px;
+    background: url(../img/timer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+}
 .icon-copy {
     color: #4A6B63;
     font-size: 16px;
@@ -277,6 +286,13 @@ position: relative;
             position: relative;
             top: 2px;
         }
+    }
+    &.-medium{
+        min-width: 200px;
+        padding: 8px 18px;
+        font-size: 24px;
+        line-height: 42px;
+        border-radius: 8px;
     }
     @media (max-width:991px){
         min-width: 270px;

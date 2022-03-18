@@ -403,26 +403,47 @@ $shadows-big: multiple-box-shadow(100);
 
 
 /**/
-.checkmark__item{
-    position: relative;
-    padding-left: 25px;
-    cursor: pointer;
-    li{
-        position: relative;
+.checkmark__item{position:relative;padding-left:25px;cursor:pointer;
+    li{position:relative;}
+    input{display:none;}
+
+    label{cursor:pointer;}
+    input[type=checkbox] + .checkmark{position:absolute;left:0;}
+    input[type=checkbox] + .checkmark:before{content:"";display:block;width:17px;height:17px;position:absolute;top:1px;z-index:1;border:1.5px solid #a0a3bd;box-sizing:border-box;border-radius:3px;}
+    input[type=checkbox]:checked~.checkmark + span,input[type=checkbox]:hover~.checkmark + span{color:#04a322;}
+    input[type=checkbox]:checked~.checkmark:after{content:"";position:absolute;left:7px;top:4px;width:4px;height:8px;border:solid #fff;border-width:0 1px 1px 0;transform:rotate(45deg);z-index:2;}
+    input[type=checkbox]:checked~.checkmark:before{border:2px solid #04a322;background-color:#04a322;}
+    input[type=checkbox]:checked~.checkmark.-color-primary:before{background-color:#E09B0F;border:2px solid #E09B0F;}
+}
+
+/*label check*/
+.radio-label__item{
+    position:relative;cursor:pointer;
+    span{
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 2px 8px;
+        font-size: 16px;
+        line-height: 20px;
+        background: linear-gradient(180deg, #E09B0F 0%, #E0800F 100%);
+        border-radius: 8px;
+        color:#fff;
+        opacity: 0.3;
+
     }
-    input{
-        display: none;
+    input{display:none;}
+    label{cursor:pointer;}
+    input + .checkmark{position:absolute;left:0;}
+    input:checked~.checkmark + span,input:hover~.checkmark + span{opacity: 1;}
+
+    @media (max-width: 575px){
+        span {
+            padding: 2px 8px;
+            font-size: 13px;
+        }
     }
 }
-label{
-    cursor: pointer;
-}
-input[type=checkbox] + .checkmark{position:absolute;left:0;}
-input[type=checkbox] + .checkmark:before{content:"";display:block;width:17px;height:17px;position:absolute;top:1px;z-index:1;border:1.5px solid #a0a3bd;box-sizing:border-box;border-radius:3px;}
-input[type=checkbox]:checked~.checkmark + span, input[type=checkbox]:hover~.checkmark + span{color:#04a322;}
-input[type=checkbox]:checked~.checkmark:after{content:"";position:absolute;left:7px;top:4px;width:4px;height:8px;border:solid #fff;border-width:0 1px 1px 0;transform:rotate(45deg);z-index:2;}
-input[type=checkbox]:checked~.checkmark:before{border:2px solid #04a322;background-color:#04a322;}
-input[type=checkbox]:checked~.checkmark.-color-primary:before{background-color:#E09B0F;border:2px solid #E09B0F;}
 
 
 .market__radio--horizontal{

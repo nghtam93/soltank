@@ -273,7 +273,7 @@
       z-index: -1;
       &:checked{
         +.-name{
-          background: #131514;
+          background: #0b573d;
           &:before{
             opacity: 1;
           }
@@ -315,7 +315,7 @@
     }
     &:hover{
       .-name{
-        background: #131514;
+        background: #0b573d;
         &:before{
           opacity: 1;
         }

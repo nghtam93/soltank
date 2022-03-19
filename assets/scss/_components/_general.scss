@@ -689,10 +689,30 @@ $shadows-big: multiple-box-shadow(100);
       -webkit-appearance: none;
       margin: 0;
     }
-
-    /* Firefox */
     input[type=number] {
       -moz-appearance: textfield;
+    }
+
+    .-search-wrap-field{
+        .-input-search{
+            height: 55px;
+            background: #edf0f4;
+            border-radius: 27.5px;
+            padding: 5px 24px;
+            color: #FFFFFF;
+            font-size: 18px;
+            border: 1px solid #232863;
+            padding-left: 56px;
+        }
+        i{
+            font-weight: 500;
+            left: 24px;
+            font-size: 22px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #053222;
+        }
     }
 
     @media (max-width: 767px){
@@ -729,6 +749,22 @@ $shadows-big: multiple-box-shadow(100);
         }
     }
     @media (min-width:768px){
-        .modal-dialog{max-width:600px;}
+        .modal-dialog{
+            max-width:600px;
+            &.-large{
+                width: calc(100% - 32px);
+                max-width: 740px;
+            }
+        }
+
+        .modal-dialog{
+            &.-large{
+                .modal-title{
+                    font-size: 32px;
+                    line-height: 52px;
+                }
+            }
+        }
+
     }
 }

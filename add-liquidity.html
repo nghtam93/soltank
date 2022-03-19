@@ -121,7 +121,7 @@
 
                 <div class="sidebar__header border-bottom-0">
                   <ul>
-                    <li class="active"><a href="staking.html">Staking</a></li>
+                    <li><a href="staking.html">Staking</a></li>
                     <li><a href="farming.html">Farming</a></li>
                     <li><a href="">Document</a></li>
                   </ul>
@@ -135,7 +135,7 @@
 
               <div class="staking__nav d-md-none">
                 <ul>
-                  <li class="active"><a href="staking.html">Staking</a></li>
+                  <li><a href="staking.html">Staking</a></li>
                   <li><a href="farming.html">Farming</a></li>
                   <li><a href="">Document</a></li>
                 </ul>
@@ -143,59 +143,36 @@
 
               <div class="modalfake">
                 <div class="modalfake__header">
-                  <div class="modalfake__title">STAKE NFT - EARN STK</div>
+                  <div class="modalfake__title">Add Liquidity</div>
                 </div>
                 <div class="modalfake__content">
-                  <ul class="el__list">
-                    <li>
-                      <div class="li__label">ARR</div>
-                      <div class="li__val ms-auto text-end">0.00%</div>
-                    </li>
-                    <li>
-                      <div class="li__label">Duration</div>
-                      <div class="li__val ms-auto text-end">
-                        <label class="radio-label__item">
-                          <input type="radio" name="cate" value="" checked><span class="checkmark"></span><span class="-text">None</span>
-                        </label>
-                        <label class="radio-label__item">
-                          <input type="radio" name="cate" value=""><span class="checkmark"></span><span class="-text">3 months</span>
-                        </label>
-                        <label class="radio-label__item">
-                          <input type="radio" name="cate" value=""><span class="checkmark"></span><span class="-text">6 months</span>
-                        </label>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="li__label">Start in</div>
-                      <div class="li__val ms-auto text-end"><i class="ic-timer"></i></div>
-                    </li>
-                    <li>
-                      <div class="li__label">End in</div>
-                      <div class="li__val ms-auto text-end"><i class="ic-timer"></i></div>
-                    </li>
-                    <li>
-                      <div class="li__box">
-                        <div class="d-flex justify-content-between mb-2 mb-sm-3">
-                          <div>Staked</div>
-                          <div class="li__val">0.00</div>
-                        </div>
-                        <div class="d-flex justify-content-between mb-2 mb-sm-3">
-                          <div>Earned</div>
-                          <div class="li__val">0.00</div>
-                        </div>
-                        <div class="d-flex justify-content-between mb-2 mb-sm-3">
-                          <div>Reward</div>
-                          <div class="li__val -color-primary">0.00</div>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                          <div>Input your NFT</div>
-                          <div><input type="text" placeholder="0.00"></div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
 
-                  <button class="btn w-100">Approve</button>
+                  <div class="form-group mb-3">
+                    <div class="-currency d-flex justify-content-between align-items-center mb-3">
+                        <button type="button" class="show-modal" data-bs-toggle="modal" data-bs-target="#chooseToken">
+                          Select a currency <i class="icon-arrow-down"></i>
+                        </button>
+                    </div>
+                    <div class="cr__input position-relative">
+                      <input type="number" class="form-control -input" placeholder="0.0">
+                    </div><!-- cr__input -->
+                  </div>
+                  <div class="-currency__arrow mt-4 mb-3 text-center"><i class="icon-plus"></i></div>
+                  <div class="form-group mb-4">
+                    <div class="-currency d-flex justify-content-between align-items-center mb-3">
+                        <button type="button" class="show-modal" data-bs-toggle="modal" data-bs-target="#chooseToken">
+                          Select a currency <i class="icon-arrow-down"></i>
+                        </button>
+                    </div><!-- cr__item -->
+                    <div class="cr__input position-relative">
+                      <input type="number" class="form-control -input" placeholder="0.0">
+                    </div><!-- cr__input -->
+                  </div>
+
+                  <div class="">
+                      <button class="btn -medium w-100">ADD LIQUIDITY</button>
+                  </div>
+
                 </div>
 
               </div>
@@ -249,6 +226,122 @@
 
       </div>
     </div>
+
+
+      <!-- modal choose item -->
+      <div class="modal fade wl__modal modal-s1 -sellorbit" id="chooseToken" tabindex="-1" aria-labelledby="chooseTokenTitle" aria-hidden="true">
+        <div class="modal-dialog -large modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="chooseTokenTitle">Select a token</h3>
+              <button type="button" class="-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-close"></i></button>
+            </div>
+            <div class="modal-body">
+              <form action="#" method="post" class="wl__form">
+                <div class="form-group">
+                  <div class="-search-wrap-field position-relative">
+                    <input type="email" class="form-control -input-search" placeholder="Search name or paste address" />
+                    <i class="icon-search"></i>
+                  </div>
+                  <div class="-common">
+                    <div class="-common__txt mb-2">Common bases <i class="icon-question-circle ms-2"></i></div>
+                    <ul class="-common__list list-unstyled d-flex flex-wrap justify-content-center justify-content-sm-start">
+                      <li class="-item cm__choose">
+                        <input type="radio" name="token" id="cm__deffzone" class="-check" checked>
+                        <label for="cm__deffzone" class="-name d-flex align-items-center">
+                          <span class="-logo"><img src="./assets/img/pages/logo-deffzone.png" alt=""></span>
+                          <span class="ms-2">DEFF</span>
+                        </label>
+                      </li><!-- end cm__choose -->
+                      <li class="-item cm__choose">
+                        <input type="radio" name="token" id="cm__eth" class="-check">
+                        <label for="cm__eth" class="-name d-flex align-items-center">
+                          <span class="-logo"><img src="./assets/img/pages/logo-eth.png" alt=""></span>
+                          <span class="ms-2">ETH</span>
+                        </label>
+                      </li><!-- end cm__choose -->
+                      <li class="-item cm__choose">
+                        <input type="radio" name="token" id="cm__bnb" class="-check">
+                        <label for="cm__bnb" class="-name d-flex align-items-center">
+                          <span class="-logo"><img src="./assets/img/pages/logo-bnb.png" alt=""></span>
+                          <span class="ms-2">BNB</span>
+                        </label>
+                      </li><!-- end cm__choose -->
+                      <li class="-item cm__choose">
+                        <input type="radio" name="token" id="cm__metamask" class="-check">
+                        <label for="cm__metamask" class="-name d-flex align-items-center">
+                          <span class="-logo"><img src="./assets/img/pages/logo-metamask.png" alt=""></span>
+                          <span class="ms-2">Metamask</span>
+                        </label>
+                      </li><!-- end cm__choose -->
+                      <li class="-item cm__choose">
+                        <input type="radio" name="token" id="cm__usdt" class="-check">
+                        <label for="cm__usdt" class="-name d-flex align-items-center">
+                          <span class="-logo d-flex align-items-center justify-content-center"><img src="./assets/img/pages/logo-usdt.png" alt=""></span>
+                          <span class="ms-2">USDT</span>
+                        </label>
+                      </li><!-- end cm__choose -->
+                    </ul>
+                  </div>
+                </div><!-- end form-group -->
+                <div class="form-group scroll__wrap">
+                  <ul class="token-list scroll__wrap__content">
+                    <li class="tk__item d-flex align-items-center justify-content-between">
+                      <input type="radio" name="token" id="tk__eth" class="-check">
+                      <label for="tk__eth" class="-name pe-4 pe-md-0">
+                        <span>ETH</span>
+                        <span class="-full-name">Ethereum</span>
+                      </label>
+                      <div class="-meta d-flex align-items-center">
+                        <div class="-numb">0.003712</div>
+                        <div class="-logo d-flex align-items-center justify-content-center"><img src="./assets/img/pages/logo-eth.png" alt=""></div>
+                      </div>
+                    </li><!-- end tk__item -->
+                    <li class="tk__item d-flex align-items-center justify-content-between">
+                      <input type="radio" name="token" id="tk__bnb" class="-check">
+                      <label for="tk__bnb" class="-name pe-4 pe-md-0">
+                        <span>BNB</span>
+                        <span class="-full-name">Binance Coin</span>
+                      </label>
+                      <div class="-meta d-flex align-items-center">
+                        <div class="-numb">0.003712</div>
+                        <div class="-logo d-flex align-items-center justify-content-center"><img src="./assets/img/pages/logo-bnb.png" alt=""></div>
+                      </div>
+                    </li><!-- end tk__item -->
+                    <li class="tk__item d-flex align-items-center justify-content-between">
+                      <input type="radio" name="token" id="tk__metamask" class="-check">
+                      <label for="tk__metamask" class="-name pe-4 pe-md-0">
+                        <span>Metamask</span>
+                        <span class="-full-name">MetaMask</span>
+                      </label>
+                      <div class="-meta d-flex align-items-center">
+                        <div class="-numb">0.003712</div>
+                        <div class="-logo d-flex align-items-center justify-content-center"><img src="./assets/img/pages/logo-metamask.png" alt=""></div>
+                      </div>
+                    </li><!-- end tk__item -->
+                    <li class="tk__item d-flex align-items-center justify-content-between">
+                      <input type="radio" name="token" id="tk__usdt" class="-check">
+                      <label for="tk__usdt" class="-name pe-4 pe-md-0">
+                        <span>USDT</span>
+                        <span class="-full-name">Tether</span>
+                      </label>
+                      <div class="-meta d-flex align-items-center">
+                        <div class="-numb">0.003712</div>
+                        <div class="-logo d-flex align-items-center justify-content-center"><img src="./assets/img/pages/logo-usdt.png" alt=""></div>
+                      </div>
+                    </li><!-- end tk__item -->
+                  </ul>
+                </div><!-- end form-group -->
+                <div class="text-center">
+                  <button class="btn -submit" type="button" data-bs-toggle="modal" data-bs-target="#mangeToken"><span>Manage Tokens</span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal choose item -->
+
 
 
     <nav id="menu__mobile" class="nav__mobile">
